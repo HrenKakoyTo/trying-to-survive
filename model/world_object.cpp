@@ -8,19 +8,19 @@ string world_object::get_type() const{
 }
 float world_object::get_x() const{
     return x;
-};
+}
 float world_object::get_y() const{
     return y;
-};
+}
 int world_object::get_width() const{
     return width;
-};
+}
 int world_object::get_height() const{
     return height;
-};
+}
 int world_object::get_angle_of_rotation() const{
     return angle_of_rotation;
-};
+}
 
 void world_object::set_type(string type) {
     this->type = type;
@@ -35,7 +35,7 @@ void world_object::set_height(int h) {
     this->height = h;
 }
 void world_object::set_width(int w) {
-    this->width = x;
+    this->width = w;
 }
 void world_object::set_angle_of_rotation(float angle) {
     this->angle_of_rotation = angle;

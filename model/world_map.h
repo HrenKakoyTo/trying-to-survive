@@ -18,6 +18,8 @@ private:
     vector<enemy> enemy_list;
     int wave_count;
 public:
+    world_map(int complexity, int width, int height, int wave_cooldown, vector<enemy> enemy_list);
+
     int get_complexity() const;
     int get_width() const;
     int get_height() const;
