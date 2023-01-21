@@ -241,7 +241,7 @@ SFML_SYSTEM_API Time operator -(Time right);
 /// \return Sum of the two times values
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API Time operator +(const char *left, Time right);
+SFML_SYSTEM_API Time operator +(Time left, Time right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Time
