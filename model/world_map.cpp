@@ -7,7 +7,7 @@
 #include "world_map.h"
 
 int world_map::get_complexity() const {
-    return complexity
+    return complexity;
 }
 int world_map::get_width() const{
     return width;

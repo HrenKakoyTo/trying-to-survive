@@ -19,7 +19,7 @@ private:
     vector<enemy> enemy_list;
     //view
 public:
-    void tic(string direction, bool is_paused);
+    void tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
 };
 
 
