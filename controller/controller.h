@@ -7,7 +7,6 @@ class Controller
 
 public:
     Controller();
-    ~Controller();
     void play();
 
 };
