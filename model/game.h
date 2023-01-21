@@ -3,7 +3,6 @@
 //
 #include "world_object.h"
 #include "enemy.h"
-#include "drop.h"
 #include "projectile.h"
 #include "hero.h"
 #include <vector>
@@ -16,7 +15,6 @@ class game {
 private:
     hero player;
     //map map;
-    vector<drop> drop_list;
     vector<projectile> projectile_list;
     vector<enemy> enemy_list;
     //view

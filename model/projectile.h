@@ -10,10 +10,9 @@ class projectile {
 private:
     int speed,damage;
     int time_to_live;
-    int pen_count;
 public:
     virtual void move();
-    virtual void hit();
+    virtual void hit(enemy & enemy);
 };
 
 
