@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/spacename/CLionProjects/trying-to-survive/main.cpp" "CMakeFiles/untitled.dir/main.cpp.obj" "gcc" "CMakeFiles/untitled.dir/main.cpp.obj.d"
   "C:/Users/spacename/CLionProjects/trying-to-survive/visual/draw_game_elements.cpp" "CMakeFiles/untitled.dir/visual/draw_game_elements.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/draw_game_elements.cpp.obj.d"
+  "C:/Users/spacename/CLionProjects/trying-to-survive/visual/view.cpp" "CMakeFiles/untitled.dir/visual/view.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/view.cpp.obj.d"
   )
 
 # Targets to which this target links.

@@ -176,6 +176,30 @@ visual/draw_game_elements.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/draw_game_elements.cpp.s
 .PHONY : visual/draw_game_elements.cpp.s
 
+visual/view.obj: visual/view.cpp.obj
+.PHONY : visual/view.obj
+
+# target to build an object file
+visual/view.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.obj
+.PHONY : visual/view.cpp.obj
+
+visual/view.i: visual/view.cpp.i
+.PHONY : visual/view.i
+
+# target to preprocess a source file
+visual/view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.i
+.PHONY : visual/view.cpp.i
+
+visual/view.s: visual/view.cpp.s
+.PHONY : visual/view.s
+
+# target to generate assembly for a file
+visual/view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.s
+.PHONY : visual/view.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... visual/draw_game_elements.obj
 	@echo ... visual/draw_game_elements.i
 	@echo ... visual/draw_game_elements.s
+	@echo ... visual/view.obj
+	@echo ... visual/view.i
+	@echo ... visual/view.s
 .PHONY : help
 
 

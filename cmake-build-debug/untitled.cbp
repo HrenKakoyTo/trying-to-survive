@@ -95,6 +95,12 @@
 		<Unit filename="C:/Users/spacename/CLionProjects/trying-to-survive/visual/draw_game_elements.h">
 			<Option target="untitled"/>
 		</Unit>
+		<Unit filename="C:/Users/spacename/CLionProjects/trying-to-survive/visual/view.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/spacename/CLionProjects/trying-to-survive/visual/view.h">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="C:/Users/spacename/CLionProjects/trying-to-survive/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
