@@ -3,3 +3,14 @@
 //
 
 #include "creature.h"
+
+int creature::get_speed(){
+    return speed;
+};
+int creature::get_hp(){
+    return hp;
+};
+bool creature::hit(int damage){
+    int hp = get_hp() - damage;
+    this->hp = hp;
+};

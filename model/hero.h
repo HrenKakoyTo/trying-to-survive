@@ -11,7 +11,8 @@
 
 class hero: public creature{
 public:
-    virtual list<projectile> shot();
+    virtual list<projectile*> shot();
+    void move(string direction, int map_h, int map_w);
 };
 
 
