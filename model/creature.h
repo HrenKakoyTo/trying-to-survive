@@ -13,7 +13,9 @@ private:
     int hp;
     int speed;
 public:
-    virtual void move();
+    int get_speed();
+    int get_hp();
+    bool hit(int damage) override;
 };
 
 

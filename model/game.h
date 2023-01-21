@@ -20,7 +20,6 @@ private:
     //view
 public:
     void tic(string direction, bool is_paused);
-    void wave_spawn();
 };
 
 
