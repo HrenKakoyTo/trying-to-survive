@@ -10,6 +10,6 @@ private:
     RenderWindow window;
 public:
     virtual int paint(vector <int> ctrl_data);
-    RenderWindow get_window();
+    RenderWindow* get_window();
     void set_window(RenderWindow window);
 };

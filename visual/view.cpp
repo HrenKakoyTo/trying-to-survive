@@ -1,5 +1,6 @@
 #include "view.h"
 
-RenderWindow view::get_window(){
-    return window;
+RenderWindow* view::get_window(){
+    auto w = & window;
+    return w;
 }
