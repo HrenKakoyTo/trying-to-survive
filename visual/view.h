@@ -1,3 +1,7 @@
+//
+// Created by Алексей on 21.01.2023.
+//
+
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <vector>

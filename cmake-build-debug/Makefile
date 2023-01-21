@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "A:\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "A:\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "A:\Clion progects\trying-to-survive"
+CMAKE_SOURCE_DIR = C:\Users\spacename\CLionProjects\trying-to-survive
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "A:\Clion progects\trying-to-survive\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = "A:\Clion progects\trying-to-survive\cmake-build-debug"
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"A:\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"A:\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" "A:\Clion progects\trying-to-survive\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug\CMakeFiles C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,53 +152,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-visual/draw_game_elements.obj: visual/draw_game_elements.cpp.obj
-.PHONY : visual/draw_game_elements.obj
+visual/start_menu.obj: visual/start_menu.cpp.obj
+.PHONY : visual/start_menu.obj
 
 # target to build an object file
-visual/draw_game_elements.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/draw_game_elements.cpp.obj
-.PHONY : visual/draw_game_elements.cpp.obj
+visual/start_menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/start_menu.cpp.obj
+.PHONY : visual/start_menu.cpp.obj
 
-visual/draw_game_elements.i: visual/draw_game_elements.cpp.i
-.PHONY : visual/draw_game_elements.i
-
-# target to preprocess a source file
-visual/draw_game_elements.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/draw_game_elements.cpp.i
-.PHONY : visual/draw_game_elements.cpp.i
-
-visual/draw_game_elements.s: visual/draw_game_elements.cpp.s
-.PHONY : visual/draw_game_elements.s
-
-# target to generate assembly for a file
-visual/draw_game_elements.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/draw_game_elements.cpp.s
-.PHONY : visual/draw_game_elements.cpp.s
-
-visual/view.obj: visual/view.cpp.obj
-.PHONY : visual/view.obj
-
-# target to build an object file
-visual/view.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.obj
-.PHONY : visual/view.cpp.obj
-
-visual/view.i: visual/view.cpp.i
-.PHONY : visual/view.i
+visual/start_menu.i: visual/start_menu.cpp.i
+.PHONY : visual/start_menu.i
 
 # target to preprocess a source file
-visual/view.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.i
-.PHONY : visual/view.cpp.i
+visual/start_menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/start_menu.cpp.i
+.PHONY : visual/start_menu.cpp.i
 
-visual/view.s: visual/view.cpp.s
-.PHONY : visual/view.s
+visual/start_menu.s: visual/start_menu.cpp.s
+.PHONY : visual/start_menu.s
 
 # target to generate assembly for a file
-visual/view.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.s
-.PHONY : visual/view.cpp.s
+visual/start_menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/start_menu.cpp.s
+.PHONY : visual/start_menu.cpp.s
 
 # Help Target
 help:
@@ -212,12 +188,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... visual/draw_game_elements.obj
-	@echo ... visual/draw_game_elements.i
-	@echo ... visual/draw_game_elements.s
-	@echo ... visual/view.obj
-	@echo ... visual/view.i
-	@echo ... visual/view.s
+	@echo ... visual/start_menu.obj
+	@echo ... visual/start_menu.i
+	@echo ... visual/start_menu.s
 .PHONY : help
 
 

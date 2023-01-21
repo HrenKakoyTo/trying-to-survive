@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "A:\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "A:\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "A:\Clion progects\trying-to-survive"
+CMAKE_SOURCE_DIR = C:\Users\spacename\CLionProjects\trying-to-survive
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "A:\Clion progects\trying-to-survive\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/untitled.dir/clean
 CMakeFiles/untitled.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target untitled"
 .PHONY : CMakeFiles/untitled.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/untitled.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/untitled.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/untitled.dir/rule
 
 # Convenience name for target.
