@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2022.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\untitled.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc CMakeFiles\untitled.dir/objects.a @CMakeFiles\untitled.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\untitled.dir/objects.a -Wl,--no-whole-archive -o untitled.exe -Wl,--out-implib,libuntitled.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\untitled.dir\linklibs.rsp
+/usr/bin/c++ -g CMakeFiles/untitled.dir/main.cpp.o -o untitled  -Wl,-rpath,/home/jus/game/SFML-2.5.1/bin /home/jus/game/SFML-2.5.1/bin/sfml-graphics-d-2.dll /home/jus/game/SFML-2.5.1/bin/sfml-audio-d-2.dll /home/jus/game/SFML-2.5.1/bin/sfml-window-d-2.dll /home/jus/game/SFML-2.5.1/bin/sfml-system-d-2.dll 

@@ -1,5 +1,6 @@
 #include "draw_game_elements.h"
 
+
 void view_game::draw_element(int x, int y, int w, int h, string texture_name, float degree, bool turn) {
     Texture game_element;
     game_element.loadFromFile("./texture"+texture_name+".png");
@@ -24,8 +25,6 @@ Text kill_point;
     kill_point.setPosition(50, 100);
     kill_point.setCharacterSize(25);
     kill_point.setString(str_kill_point);
-    window.draw(heal_point);
-    window.draw(kill_point);
 }
 
 

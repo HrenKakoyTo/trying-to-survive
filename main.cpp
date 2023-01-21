@@ -1,4 +1,6 @@
 #include "model/game.h"
+#include "controller/controller.h"
+#include "visual/draw_game_elements.h"
 #include <SFML/Window.hpp>
 
 int main()
