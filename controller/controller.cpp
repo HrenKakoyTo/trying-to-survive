@@ -72,7 +72,6 @@ void controller::play() {
 
        Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left));
 
-
     }
     window.clear();
     window.display();
