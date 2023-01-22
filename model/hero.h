@@ -10,6 +10,12 @@
 #define UNTITLED_HERO_H
 
 class hero: public creature{
+private:
+    projectile* projectile_type;
+    int projectiles_per_shot;
+    int time_to_shot;
+    int cooldown;
+    int accuracy;
 public:
     virtual list<projectile*> shot();
     void move(string direction, int map_h, int map_w);

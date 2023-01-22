@@ -16,4 +16,4 @@ void hero::move(string direction, int map_h, int map_w) {
         x -= speed;
     if (direction == "d" && y < map_h-get_height())
         x += speed;
-};
+}

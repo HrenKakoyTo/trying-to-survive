@@ -13,6 +13,7 @@ private:
     int hp;
     int speed;
 public:
+    creature();
     int get_speed();
     int get_hp();
     bool hit(int damage) override;
