@@ -1,6 +1,6 @@
 #include "../model/game.h"
 #include "controller.h"
-
+#include "../visual/view.cpp"
 void controller::play() {
 
     sf::Clock clock;
@@ -69,9 +69,11 @@ void controller::play() {
 
            }
        }
+
+
         sf::Vector2i pixelPos = sf::Mouse::getPosition();
         sf::Vector2f worldPos = window->mapPixelToCoords(pixelPos);
-       Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left), worldPos.x, worldPos.y);
+       Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left), (int)worldPos.x, (int)worldPos.y);
 
     }
     window->clear();
