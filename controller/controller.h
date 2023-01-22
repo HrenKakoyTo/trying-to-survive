@@ -1,12 +1,12 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
-class Controller
+class controller
 {
     sf::RenderWindow* window;
 
 public:
-    Controller();
+    controller();
     void play();
 
 };

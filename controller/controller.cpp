@@ -1,8 +1,8 @@
 #include "../model/game.h"
 #include "controller.h"
 
-void Controller::play() {
-    Controller();
+void controller::play() {
+    controller();
     sf::Clock clock;
     window = new sf::RenderWindow (sf::VideoMode(800, 600), "game");
     window.setFramerateLimit(20);
@@ -30,16 +30,20 @@ void Controller::play() {
            }
        }
        string key;
+       key.clear();
 
-
-       ifstream std::cin("");
-
-
-
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)){key="ul";}
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)){key="dl";}
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)){key="ur";}
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)){key="dr";}
+       if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
+           key="ul";
+       }
+       if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)){
+           key="dl";
+       }
+       if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
+           key="ur";
+       }
+       if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)){
+           key="dr";
+       }
        if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
            key="u";
        }
@@ -53,8 +57,18 @@ void Controller::play() {
            key="r";
        }
 
-        Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left));
-        key.clear();
+       if (Game.tic()) {
+           n=view.paint();
+           switch (condition) {
+               case 1: newgame
+               case 2: exit
+               default:
+
+           }
+       }
+
+       Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left));
+
 
     }
 
