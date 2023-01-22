@@ -1,10 +1,12 @@
 //
 // Created by Александр on 19.01.2023.
 //
+#include "../visual/view.h"
 #include "world_object.h"
 #include "enemy.h"
 #include "projectile.h"
 #include "hero.h"
+#include "world_map.h"
 #include <vector>
 
 #ifndef UNTITLED_GAME_H
@@ -13,13 +15,13 @@
 
 class game {
 private:
-    hero player;
-    //map map;
-    vector<projectile> projectile_list;
+    hero* player = new hero;
+    world_map map;
+    vector<projectile*> projectile_list;
     vector<enemy> enemy_list;
-    //view
+    view* view;
 public:
-    void tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
+    bool tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
 };
 
 

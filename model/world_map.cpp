@@ -7,7 +7,7 @@
 
 world_map::world_map(int complexity, int width, int height, int wave_cooldown, vector<enemy> enemy_list):
 complexity(complexity), width(width), height(height), wave_cooldown(wave_cooldown),
-enemy_list(enemy_list), wave_count(0), tic_to_wave(wave_cooldown){}
+enemy_list(enemy_list), wave_number(0), tic_to_wave(wave_cooldown){}
 
 int world_map::get_complexity() const {
     return complexity;
@@ -24,8 +24,8 @@ int world_map::get_tic_to_wave() const{
 int world_map::get_wave_cooldown() const{
     return wave_cooldown;
 }
-int world_map::get_wave_count() const{
-    return wave_count;
+int world_map::get_wave_number() const {
+    return wave_number;
 }
 vector<enemy> world_map::get_enemy_list() const{
     return enemy_list;
@@ -46,8 +46,8 @@ void world_map::set_tic_to_wave(int tics){
 void world_map::set_wave_cooldown(int tics){
     this->wave_cooldown = tics;
 }
-void world_map::set_wave_count(int n){
-    this->wave_count = n;
+void world_map::set_wave_number(int n) {
+    this->wave_number = n;
 }
 void world_map::set_enemy_list(vector<enemy> enemy_list){
     this->enemy_list = enemy_list;
@@ -59,7 +59,7 @@ vector<enemy> world_map::wave_spawn(int hero_x, int hero_y) {
         return new_enemies;
     }
     tic_to_wave = wave_cooldown;
-    for (int i=0; i<complexity*(1+wave_count*0.2); i++){
+    for (int i=0; i<complexity*(1+wave_number*0.2); i++){
         srand(clock());
         enemy new_enemy;
         if (rand()%2){ // 1 left or right
