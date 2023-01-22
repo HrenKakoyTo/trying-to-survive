@@ -5,6 +5,17 @@
 #include "enemy.h"
 #include <cmath>
 
+enemy::enemy(string type, int x, int y, int w, int h, int speed, int damage, int hp) {
+    set_x(x);
+    set_y(y);
+    set_type(type);
+    set_width(w);
+    set_height(h);
+    set_speed(speed);
+    this->damage = damage;
+    set_hp(hp);
+}
+
 float enemy::direction_to_hero(hero* &hero) {
     int hero_x = hero->get_x();
     int hero_y = hero->get_y();

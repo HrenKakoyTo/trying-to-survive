@@ -5,10 +5,17 @@
 #include <time.h>
 #include "world_map.h"
 
-world_map::world_map(int complexity, int width, int height, int wave_cooldown, vector<enemy> enemy_list):
-complexity(complexity), width(width), height(height), wave_cooldown(wave_cooldown),
-enemy_list(enemy_list), wave_number(0), tic_to_wave(wave_cooldown){}
+world_map::world_map(int complexity, int width, int height, int wave_cooldown, int wave_count, list<enemy> enemy_types):
+complexity(complexity), width(width), height(height), wave_cooldown(wave_cooldown), wave_count(wave_count), enemy_list(),
+wave_number(0), tic_to_wave(wave_cooldown){
+    for (auto it = enemy_types.begin(); it!=enemy_types.end(); it++){
+        enemy_list.push_back(*it);
+    }
+}
 
+string world_map::get_map_name() const {
+    return map_name;
+}
 int world_map::get_complexity() const {
     return complexity;
 }
@@ -27,10 +34,16 @@ int world_map::get_wave_cooldown() const{
 int world_map::get_wave_number() const {
     return wave_number;
 }
+int world_map::get_wave_count() const {
+    return wave_count;
+}
 vector<enemy> world_map::get_enemy_list() const{
     return enemy_list;
 }
 
+void world_map::set_map_name(string name) {
+    this->map_name = name;
+}
 void world_map::set_complexity(int n) {
     this->complexity = n;
 }
@@ -49,6 +62,9 @@ void world_map::set_wave_cooldown(int tics){
 void world_map::set_wave_number(int n) {
     this->wave_number = n;
 }
+void world_map::set_wave_count(int n) {
+    this->wave_count = n;
+}
 void world_map::set_enemy_list(vector<enemy> enemy_list){
     this->enemy_list = enemy_list;
 }
@@ -62,7 +78,7 @@ vector<enemy> world_map::wave_spawn(int hero_x, int hero_y) {
     wave_number += 1;
     for (int i=0; i<complexity*(1+wave_number*0.2); i++){
         srand(clock());
-        enemy new_enemy;
+        enemy new_enemy = enemy_list[rand()%enemy_list.size()];
         if (rand()%2){ // 1 left or right
             if (rand()%2){ // left side
                 new_enemy.set_x(hero_x - 420);

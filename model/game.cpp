@@ -3,10 +3,54 @@
 //
 
 #include "game.h"
+#include "petr.h"
 
+struct enemy_type{
+    string type;
+    int w, h;
+    int hp;
+    int speed;
+    int damage;
+};
+
+struct map_type{
+    string type;
+    int complexity;
+    int width, height;
+    int wave_cooldown;
+    int wave_count;
+    list<enemy> enemy_types;
+};
+
+vector<map_type> map_types;
+vector<enemy_type> enemy_types;
+
+void start() {
+
+    enemy_type pg = {"pg_right", 70, 70, 200, 1, 1}; // перечисление противников
+
+    list<enemy> grass_enemies; // пречисление карт
+    grass_enemies.push_back(enemy(pg.type, 0, 0, pg.w, pg.h, pg.speed, pg.damage, pg.hp));
+    map_type grass = {"fon_grass", 10, 3000, 3000,
+                      200, 5, grass_enemies};
+}
 
 bool collision_check(bool x1, bool y1,int w1, int h1, bool x2, bool y2, int w2, int h2){
     return x1+w1 > x2 && x2+w2 > x1 && y1+h1 > y2 && y2+h2 > y1;
+}
+
+game::game(string hero_type, int map_type, class view *&view):map(map_types[map_type].complexity,
+        map_types[map_type].width, map_types[map_type].height,map_types[map_type].wave_cooldown,
+        map_types[map_type].wave_count, map_types[map_type].enemy_types) {
+    //создание персонажа
+    if (hero_type == "petr"){
+        player = new petr();
+    }
+    else if (!true){
+
+    }
+    this->view = view;
+    start();
 }
 
 int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
@@ -58,6 +102,23 @@ int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
     if (map.get_wave_number() >= map.get_wave_count() && enemy_list.size() == 0){
         exit_code = 1;
     }
-
+    throwing_data_into_the_view();
     return exit_code;
+}
+void game::throwing_data_into_the_view(){
+    view->draw_element(0-player->get_x(), 0-player->get_y(), map.get_map_name(), 0); // карта
+    for (auto it = enemy_list.begin(); it!=enemy_list.end();  it++){ // противники
+        view->draw_element(it->get_x()-player->get_x(), it->get_y()-player->get_y(),
+                           player->get_type(), player->get_angle_of_rotation());
+    }
+
+    view->draw_element((view->get_window()->getSize().x-player->get_width())/2, // персонаж
+                       (view->get_window()->getSize().y-player->get_height())/2,
+                       player->get_type(), player->get_angle_of_rotation());
+
+    for (auto it = projectile_list.begin(); it!=projectile_list.end();  it++){ // снаряды
+        view->draw_element((*it)->get_x()-player->get_x(), (*it)->get_y()-player->get_y(),
+                           player->get_type(), player->get_angle_of_rotation());
+    }
+    view->draw_interface(player->get_hp(), map.get_wave_number(), map.get_wave_count());
 }

@@ -16,6 +16,8 @@ public:
     creature();
     int get_speed();
     int get_hp();
+    void set_speed(int speed);
+    void set_hp(int hp);
     bool hit(int damage) override;
 };
 

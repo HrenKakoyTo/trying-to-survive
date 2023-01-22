@@ -11,6 +11,7 @@
 
 class world_map {
 private:
+    string map_name;
     int complexity;
     int width, height;
     int tic_to_wave;
@@ -19,8 +20,9 @@ private:
     int wave_number;
     int wave_count;
 public:
-    world_map(int complexity, int width, int height, int wave_cooldown, vector<enemy> enemy_list);
+    world_map(int complexity, int width, int height, int wave_cooldown, int wave_count, list<enemy> enemy_types);
 
+    string get_map_name() const;
     int get_complexity() const;
     int get_width() const;
     int get_height() const;
@@ -30,6 +32,7 @@ public:
     int get_wave_count() const;
     vector<enemy> get_enemy_list() const;
 
+    void set_map_name(string name);
     void set_complexity(int n);
     void set_width(int w);
     void set_height(int h);

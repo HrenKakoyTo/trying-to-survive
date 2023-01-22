@@ -15,13 +15,15 @@
 
 class game {
 private:
-    hero* player = new hero;
+    hero* player;
     world_map map;
     vector<projectile*> projectile_list;
     vector<enemy> enemy_list;
     view* view;
 public:
+    game(string hero_type, int map_type, class view* & view);
     int tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
+    void throwing_data_into_the_view();
 };
 
 
