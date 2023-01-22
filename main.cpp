@@ -5,6 +5,8 @@
 
 int main()
 {
+    Controller controller;
+    controller.play();
     sf::Window window(sf::VideoMode(800, 600), "My window");
 
     sf::Event event;

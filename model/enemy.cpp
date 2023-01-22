@@ -5,7 +5,7 @@
 #include "enemy.h"
 #include <cmath>
 
-float enemy::direction_to_hero(creature* const &hero) {
+float enemy::direction_to_hero(hero* &hero) {
     int hero_x = hero->get_x();
     int hero_y = hero->get_y();
     int x = this->get_x();
@@ -13,7 +13,7 @@ float enemy::direction_to_hero(creature* const &hero) {
     float angle = ::atan2(hero_y - y, hero_x - x);
     return angle;
 }
-void enemy:: move(creature* & hero){
+void enemy:: move(hero* & hero){
     int w = get_width();
     int h = get_height();
     int hero_w = hero->get_width();

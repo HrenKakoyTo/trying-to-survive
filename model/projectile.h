@@ -23,7 +23,7 @@ public:
     void set_time_to_live(int tics);
 
     virtual void move();
-    virtual bool hit(creature* & creature);
+    virtual bool hit();
 };
 
 
