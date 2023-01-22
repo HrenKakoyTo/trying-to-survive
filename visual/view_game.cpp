@@ -4,7 +4,7 @@
 
 #include "view_game.h"
 
-void view_game::draw_element(int x, int y, int w, int h, string texture_name, float degree) {
+void view_game::draw_element(int x, int y, string texture_name, float degree) {
     auto window = get_window(); // в каждой функции берёшь окно на котором надо рисовать
     Texture game_element;
     game_element.loadFromFile("./texture"+texture_name+".png");
