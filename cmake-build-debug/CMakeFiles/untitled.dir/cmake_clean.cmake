@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/main.cpp.obj"
   "CMakeFiles/untitled.dir/main.cpp.obj.d"
+  "CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj"
+  "CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj.d"
   "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj"
   "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj.d"
   "libuntitled.dll.a"

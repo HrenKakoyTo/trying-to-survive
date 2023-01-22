@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+visual/maine_menu.h.obj: visual/maine_menu.h.cpp.obj
+.PHONY : visual/maine_menu.h.obj
+
+# target to build an object file
+visual/maine_menu.h.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj
+.PHONY : visual/maine_menu.h.cpp.obj
+
+visual/maine_menu.h.i: visual/maine_menu.h.cpp.i
+.PHONY : visual/maine_menu.h.i
+
+# target to preprocess a source file
+visual/maine_menu.h.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.i
+.PHONY : visual/maine_menu.h.cpp.i
+
+visual/maine_menu.h.s: visual/maine_menu.h.cpp.s
+.PHONY : visual/maine_menu.h.s
+
+# target to generate assembly for a file
+visual/maine_menu.h.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.s
+.PHONY : visual/maine_menu.h.cpp.s
+
 visual/start_menu.obj: visual/start_menu.cpp.obj
 .PHONY : visual/start_menu.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... visual/maine_menu.h.obj
+	@echo ... visual/maine_menu.h.i
+	@echo ... visual/maine_menu.h.s
 	@echo ... visual/start_menu.obj
 	@echo ... visual/start_menu.i
 	@echo ... visual/start_menu.s

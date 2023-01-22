@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "A:/Clion progects/trying-to-survive/main.cpp" "CMakeFiles/untitled.dir/main.cpp.obj" "gcc" "CMakeFiles/untitled.dir/main.cpp.obj.d"
-  "A:/Clion progects/trying-to-survive/visual/start_menu.cpp" "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj.d"
+  "C:/Users/spacename/CLionProjects/trying-to-survive/main.cpp" "CMakeFiles/untitled.dir/main.cpp.obj" "gcc" "CMakeFiles/untitled.dir/main.cpp.obj.d"
+  "C:/Users/spacename/CLionProjects/trying-to-survive/visual/maine_menu.h.cpp" "CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj.d"
+  "C:/Users/spacename/CLionProjects/trying-to-survive/visual/start_menu.cpp" "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj.d"
   )
 
 # Targets to which this target links.
