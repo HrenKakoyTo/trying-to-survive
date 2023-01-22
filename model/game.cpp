@@ -9,8 +9,8 @@ bool collision_check(bool x1, bool y1,int w1, int h1, bool x2, bool y2, int w2, 
     return x1+w1 > x2 && x2+w2 > x1 && y1+h1 > y2 && y2+h2 > y1;
 }
 
-bool game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
-    bool is_plaer_dead = player->get_hp() < 1;
+int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
+    int exit_code = player->get_hp() < 1;
     // движение персонажа
     if (!is_plaer_dead)
         player->move(direction, map.get_height(), map.get_width());

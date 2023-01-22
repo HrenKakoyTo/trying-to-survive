@@ -21,7 +21,7 @@ private:
     vector<enemy> enemy_list;
     view* view;
 public:
-    bool tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
+    int tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
 };
 
 
