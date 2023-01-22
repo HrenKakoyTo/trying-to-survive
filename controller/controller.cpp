@@ -2,20 +2,20 @@
 #include "controller.h"
 
 void controller::play() {
-    controller();
+
     sf::Clock clock;
     window = new sf::RenderWindow (sf::VideoMode(800, 600), "game");
-    window.setFramerateLimit(20);
+    window->setFramerateLimit(20);
     sf::Event event;
 
     game Game;
     string key; //нажатая клавиша
 
-    while (window.pollEvent(event))
+    while (window->pollEvent(event))
     {
 
         if (event.type == sf::Event::Closed)
-            window.close();
+            window->close();
 
 
        switch (VARIABLE){
@@ -69,10 +69,11 @@ void controller::play() {
 
            }
        }
-
-       Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left));
+        sf::Vector2i pixelPos = sf::Mouse::getPosition();
+        sf::Vector2f worldPos = window->mapPixelToCoords(pixelPos);
+       Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left), worldPos.x, worldPos.y);
 
     }
-    window.clear();
-    window.display();
+    window->clear();
+    window->display();
 };

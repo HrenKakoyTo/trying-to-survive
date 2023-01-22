@@ -5,16 +5,7 @@
 
 int main()
 {
-    controller controller;
-    controller.play();
-    sf::Window window(sf::VideoMode(800, 600), "My window");
-
-    sf::Event event;
-    while (window.pollEvent(event))
-    {
-        if (event.type == sf::Event::Closed)
-            window.close();
-    }
-
+    controller Controller;
+    Controller.play();
     return 0;
 }

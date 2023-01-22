@@ -6,7 +6,6 @@ class controller
     sf::RenderWindow* window;
 
 public:
-    controller();
     void play();
 
 };
