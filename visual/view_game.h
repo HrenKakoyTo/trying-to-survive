@@ -7,5 +7,5 @@ class view_game: public view
 {
 public:
     void draw_element(int x, int y, int w, int h, string texture_name, float degree = 0);
-    void draw_interface(int hp, int kp);
+    void draw_interface(int hp, int wp_now, int wp_total);
 };

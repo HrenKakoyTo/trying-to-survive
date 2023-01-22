@@ -17,8 +17,9 @@ void view_game::draw_element(int x, int y, int w, int h, string texture_name, fl
     window->draw(s_texture_name);
   //важно ^^^  методы вызываешь через стрелочку
 }
-void view_game::draw_interface(int hp, int kp) {
+void view_game::draw_interface(int hp, int wp_now, int wp_total) {
     auto window = get_window();
+
     string str_heal_point;
     str_heal_point = to_string(hp);
 Text heal_point;
@@ -26,14 +27,19 @@ Text heal_point;
     heal_point.setCharacterSize(25);
     heal_point.setString(str_heal_point);
 
-    string str_kill_point;
-    str_kill_point = to_string(kp);
-Text kill_point;
-    kill_point.setPosition(50, 100);
-    kill_point.setCharacterSize(25);
-    kill_point.setString(str_kill_point);
+    string str_wave_point_now;
+    str_wave_point_now = to_string(wp_now);
+    string str_wave_point_total;
+    str_wave_point_total = to_string(wp_total);
+Text wave_point;
+    wave_point.setPosition(50, 100);
+    wave_point.setCharacterSize(25);
+    wave_point.setString(L"Волна");
+    wave_point.setString(str_wave_point_now);
+    wave_point.setString(L"из");
+    wave_point.setString(str_wave_point_total);
     window->draw(heal_point);
-    window->draw(kill_point);
+    window->draw(wave_point);
 }
 
 
