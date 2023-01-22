@@ -24,6 +24,7 @@ struct map_type{
 
 vector<map_type> map_types;
 vector<enemy_type> enemy_types;
+vector<string> hero_types = {"petr"};
 
 void start() {
 
@@ -39,11 +40,11 @@ bool collision_check(bool x1, bool y1,int w1, int h1, bool x2, bool y2, int w2, 
     return x1+w1 > x2 && x2+w2 > x1 && y1+h1 > y2 && y2+h2 > y1;
 }
 
-game::game(string hero_type, int map_type, class view *&view):map(map_types[map_type].complexity,
+game::game(int hero_type, int map_type, class view *&view):map(map_types[map_type].complexity,
         map_types[map_type].width, map_types[map_type].height,map_types[map_type].wave_cooldown,
         map_types[map_type].wave_count, map_types[map_type].enemy_types) {
     //создание персонажа
-    if (hero_type == "petr"){
+    if (hero_types[hero_type] == "petr"){
         player = new petr();
     }
     else if (!true){

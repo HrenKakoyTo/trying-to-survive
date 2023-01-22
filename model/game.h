@@ -21,7 +21,7 @@ private:
     vector<enemy> enemy_list;
     view* view;
 public:
-    game(string hero_type, int map_type, class view* & view);
+    game(int hero_type, int map_type, class view* & view);
     int tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
     void throwing_data_into_the_view();
 };

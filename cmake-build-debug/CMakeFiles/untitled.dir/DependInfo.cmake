@@ -9,6 +9,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "A:/Clion progects/trying-to-survive/main.cpp" "CMakeFiles/untitled.dir/main.cpp.obj" "gcc" "CMakeFiles/untitled.dir/main.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/bullet.cpp" "CMakeFiles/untitled.dir/model/bullet.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/bullet.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/creature.cpp" "CMakeFiles/untitled.dir/model/creature.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/creature.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/enemy.cpp" "CMakeFiles/untitled.dir/model/enemy.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/enemy.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/game.cpp" "CMakeFiles/untitled.dir/model/game.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/game.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/hero.cpp" "CMakeFiles/untitled.dir/model/hero.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/hero.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/petr.cpp" "CMakeFiles/untitled.dir/model/petr.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/petr.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/projectile.cpp" "CMakeFiles/untitled.dir/model/projectile.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/projectile.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/world_map.cpp" "CMakeFiles/untitled.dir/model/world_map.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/world_map.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/model/world_object.cpp" "CMakeFiles/untitled.dir/model/world_object.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/world_object.cpp.obj.d"
   "A:/Clion progects/trying-to-survive/visual/start_menu.cpp" "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj.d"
   )
 

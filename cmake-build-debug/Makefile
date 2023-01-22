@@ -152,6 +152,222 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model/bullet.obj: model/bullet.cpp.obj
+.PHONY : model/bullet.obj
+
+# target to build an object file
+model/bullet.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/bullet.cpp.obj
+.PHONY : model/bullet.cpp.obj
+
+model/bullet.i: model/bullet.cpp.i
+.PHONY : model/bullet.i
+
+# target to preprocess a source file
+model/bullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/bullet.cpp.i
+.PHONY : model/bullet.cpp.i
+
+model/bullet.s: model/bullet.cpp.s
+.PHONY : model/bullet.s
+
+# target to generate assembly for a file
+model/bullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/bullet.cpp.s
+.PHONY : model/bullet.cpp.s
+
+model/creature.obj: model/creature.cpp.obj
+.PHONY : model/creature.obj
+
+# target to build an object file
+model/creature.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/creature.cpp.obj
+.PHONY : model/creature.cpp.obj
+
+model/creature.i: model/creature.cpp.i
+.PHONY : model/creature.i
+
+# target to preprocess a source file
+model/creature.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/creature.cpp.i
+.PHONY : model/creature.cpp.i
+
+model/creature.s: model/creature.cpp.s
+.PHONY : model/creature.s
+
+# target to generate assembly for a file
+model/creature.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/creature.cpp.s
+.PHONY : model/creature.cpp.s
+
+model/enemy.obj: model/enemy.cpp.obj
+.PHONY : model/enemy.obj
+
+# target to build an object file
+model/enemy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/enemy.cpp.obj
+.PHONY : model/enemy.cpp.obj
+
+model/enemy.i: model/enemy.cpp.i
+.PHONY : model/enemy.i
+
+# target to preprocess a source file
+model/enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/enemy.cpp.i
+.PHONY : model/enemy.cpp.i
+
+model/enemy.s: model/enemy.cpp.s
+.PHONY : model/enemy.s
+
+# target to generate assembly for a file
+model/enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/enemy.cpp.s
+.PHONY : model/enemy.cpp.s
+
+model/game.obj: model/game.cpp.obj
+.PHONY : model/game.obj
+
+# target to build an object file
+model/game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/game.cpp.obj
+.PHONY : model/game.cpp.obj
+
+model/game.i: model/game.cpp.i
+.PHONY : model/game.i
+
+# target to preprocess a source file
+model/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/game.cpp.i
+.PHONY : model/game.cpp.i
+
+model/game.s: model/game.cpp.s
+.PHONY : model/game.s
+
+# target to generate assembly for a file
+model/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/game.cpp.s
+.PHONY : model/game.cpp.s
+
+model/hero.obj: model/hero.cpp.obj
+.PHONY : model/hero.obj
+
+# target to build an object file
+model/hero.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/hero.cpp.obj
+.PHONY : model/hero.cpp.obj
+
+model/hero.i: model/hero.cpp.i
+.PHONY : model/hero.i
+
+# target to preprocess a source file
+model/hero.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/hero.cpp.i
+.PHONY : model/hero.cpp.i
+
+model/hero.s: model/hero.cpp.s
+.PHONY : model/hero.s
+
+# target to generate assembly for a file
+model/hero.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/hero.cpp.s
+.PHONY : model/hero.cpp.s
+
+model/petr.obj: model/petr.cpp.obj
+.PHONY : model/petr.obj
+
+# target to build an object file
+model/petr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/petr.cpp.obj
+.PHONY : model/petr.cpp.obj
+
+model/petr.i: model/petr.cpp.i
+.PHONY : model/petr.i
+
+# target to preprocess a source file
+model/petr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/petr.cpp.i
+.PHONY : model/petr.cpp.i
+
+model/petr.s: model/petr.cpp.s
+.PHONY : model/petr.s
+
+# target to generate assembly for a file
+model/petr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/petr.cpp.s
+.PHONY : model/petr.cpp.s
+
+model/projectile.obj: model/projectile.cpp.obj
+.PHONY : model/projectile.obj
+
+# target to build an object file
+model/projectile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/projectile.cpp.obj
+.PHONY : model/projectile.cpp.obj
+
+model/projectile.i: model/projectile.cpp.i
+.PHONY : model/projectile.i
+
+# target to preprocess a source file
+model/projectile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/projectile.cpp.i
+.PHONY : model/projectile.cpp.i
+
+model/projectile.s: model/projectile.cpp.s
+.PHONY : model/projectile.s
+
+# target to generate assembly for a file
+model/projectile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/projectile.cpp.s
+.PHONY : model/projectile.cpp.s
+
+model/world_map.obj: model/world_map.cpp.obj
+.PHONY : model/world_map.obj
+
+# target to build an object file
+model/world_map.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/world_map.cpp.obj
+.PHONY : model/world_map.cpp.obj
+
+model/world_map.i: model/world_map.cpp.i
+.PHONY : model/world_map.i
+
+# target to preprocess a source file
+model/world_map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/world_map.cpp.i
+.PHONY : model/world_map.cpp.i
+
+model/world_map.s: model/world_map.cpp.s
+.PHONY : model/world_map.s
+
+# target to generate assembly for a file
+model/world_map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/world_map.cpp.s
+.PHONY : model/world_map.cpp.s
+
+model/world_object.obj: model/world_object.cpp.obj
+.PHONY : model/world_object.obj
+
+# target to build an object file
+model/world_object.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/world_object.cpp.obj
+.PHONY : model/world_object.cpp.obj
+
+model/world_object.i: model/world_object.cpp.i
+.PHONY : model/world_object.i
+
+# target to preprocess a source file
+model/world_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/world_object.cpp.i
+.PHONY : model/world_object.cpp.i
+
+model/world_object.s: model/world_object.cpp.s
+.PHONY : model/world_object.s
+
+# target to generate assembly for a file
+model/world_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/world_object.cpp.s
+.PHONY : model/world_object.cpp.s
+
 visual/start_menu.obj: visual/start_menu.cpp.obj
 .PHONY : visual/start_menu.obj
 
@@ -188,6 +404,33 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... model/bullet.obj
+	@echo ... model/bullet.i
+	@echo ... model/bullet.s
+	@echo ... model/creature.obj
+	@echo ... model/creature.i
+	@echo ... model/creature.s
+	@echo ... model/enemy.obj
+	@echo ... model/enemy.i
+	@echo ... model/enemy.s
+	@echo ... model/game.obj
+	@echo ... model/game.i
+	@echo ... model/game.s
+	@echo ... model/hero.obj
+	@echo ... model/hero.i
+	@echo ... model/hero.s
+	@echo ... model/petr.obj
+	@echo ... model/petr.i
+	@echo ... model/petr.s
+	@echo ... model/projectile.obj
+	@echo ... model/projectile.i
+	@echo ... model/projectile.s
+	@echo ... model/world_map.obj
+	@echo ... model/world_map.i
+	@echo ... model/world_map.s
+	@echo ... model/world_object.obj
+	@echo ... model/world_object.i
+	@echo ... model/world_object.s
 	@echo ... visual/start_menu.obj
 	@echo ... visual/start_menu.i
 	@echo ... visual/start_menu.s

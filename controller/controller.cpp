@@ -1,6 +1,4 @@
-#include "../model/game.h"
 #include "controller.h"
-#include "../visual/view.cpp"
 void controller::play() {
 
     sf::Clock clock;
@@ -8,74 +6,73 @@ void controller::play() {
     window->setFramerateLimit(20);
     sf::Event event;
 
-    game Game;
     string key; //нажатая клавиша
 
-    while (window->pollEvent(event))
-    {
+    while (window->isOpen()) {
+        while (window->pollEvent(event)) {
 
-        if (event.type == sf::Event::Closed)
-            window->close();
+            if (event.type == sf::Event::Closed) {
+                window->close();
+            }
+
+            switch (view->paint()) {
+                case 1: {
+                    // menu_num
+                }
+                case 2: {
+
+                }
+                case 3: {
+
+                }
+            }
+
+            key.clear();
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+                key = "ul";
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+                key = "dl";
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+                key = "ur";
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+                key = "dr";
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+                key = "u";
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+                key = "d";
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+                key = "l";
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+                key = "r";
+            }
+
+            if (Game.tic()) {
+                n = view.paint();
+                switch (condition) {
+                    case 1:
+                        newgame
+                    case 2:
+                        exit
+                    default:
+
+                }
+            }
 
 
-       switch (VARIABLE){
-           case 1:
-           {
-              // menu_num
-           }
-           case 2:
-           {
+            sf::Vector2i pixelPos = sf::Mouse::getPosition();
+            sf::Vector2f worldPos = window->mapPixelToCoords(pixelPos);
+            Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left), (int) worldPos.x, (int) worldPos.y);
 
-           }
-           case 3:
-           {
-
-           }
-       }
-
-       key.clear();
-
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
-           key="ul";
-       }
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)){
-           key="dl";
-       }
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
-           key="ur";
-       }
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)){
-           key="dr";
-       }
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
-           key="u";
-       }
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)){
-           key="d";
-       }
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)){
-           key="l";
-       }
-       if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
-           key="r";
-       }
-
-       if (Game.tic()) {
-           n=view.paint();
-           switch (condition) {
-               case 1: newgame
-               case 2: exit
-               default:
-
-           }
-       }
-
-
-        sf::Vector2i pixelPos = sf::Mouse::getPosition();
-        sf::Vector2f worldPos = window->mapPixelToCoords(pixelPos);
-       Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left), (int)worldPos.x, (int)worldPos.y);
-
+        }
+        window->clear();
+        window->display();
     }
-    window->clear();
-    window->display();
 };

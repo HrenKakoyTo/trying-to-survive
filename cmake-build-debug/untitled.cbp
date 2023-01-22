@@ -87,6 +87,60 @@
 		<Unit filename="A:/Clion progects/trying-to-survive/main.cpp">
 			<Option target="untitled"/>
 		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/bullet.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/bullet.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/creature.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/creature.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/enemy.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/enemy.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/game.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/game.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/hero.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/hero.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/petr.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/petr.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/projectile.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/projectile.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/world_map.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/world_map.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/world_object.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/model/world_object.h">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="A:/Clion progects/trying-to-survive/visual/maine_menu.h">
 			<Option target="untitled"/>
 		</Unit>
