@@ -2,7 +2,7 @@
 // Created by Алексей on 21.01.2023.
 //
 
-#include "draw_game_elements.h"
+#include "view_game.h"
 
 void view_game::draw_element(int x, int y, int w, int h, string texture_name, float degree) {
     auto window = get_window(); // в каждой функции берёшь окно на котором надо рисовать

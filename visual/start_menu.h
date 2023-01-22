@@ -2,7 +2,7 @@
 // Created by Алексей on 21.01.2023.
 //
 
-#include "draw_game_elements.h"
+#include "view_game.h"
 
 class start_menu: public view{
 public:
