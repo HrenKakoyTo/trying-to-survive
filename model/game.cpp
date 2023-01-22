@@ -10,16 +10,18 @@ bool collision_check(bool x1, bool y1,int w1, int h1, bool x2, bool y2, int w2, 
 }
 
 int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
-    int exit_code = player->get_hp() < 1;
+    int exit_code = (player->get_hp() < 1)?(-1):(0);  // 0-играем, -1-проигрыш, 1-вин.
     // движение персонажа
-    if (!is_plaer_dead)
-        player->move(direction, map.get_height(), map.get_width());
+    if(exit_code == 0){
+        player->move(direction, view->get_window()->getSize().y/2, map.get_height() - view->get_window()->getSize().y/2,
+                     view->get_window()->getSize().x/2, map.get_width() - view->get_window()->getSize().x/2);
     // стрельба
-    if (is_shooting){
-        list<projectile*> new_projectiles = player->shot();
-        for(auto it = new_projectiles.begin(); it!=new_projectiles.end(); it++) {
+    if (is_shooting) {
+        list<projectile *> new_projectiles = player->shot();
+        for (auto it = new_projectiles.begin(); it != new_projectiles.end(); it++) {
             projectile_list.push_back(*it);
         }
+    }
     }
     // спавн противников
     vector<enemy> new_enemies = map.wave_spawn(player->get_x(), player->get_y());
@@ -30,7 +32,7 @@ int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
     for (auto it = enemy_list.begin(); it!=enemy_list.end(); it++){
         it->move(player);
         if(player->get_hp() < 1)
-            is_plaer_dead = 1;
+            exit_code = -1;
     }
     // проверка на поподание
     for (auto it1 = projectile_list.begin(); it1!=projectile_list.end(); it1++){
@@ -52,4 +54,10 @@ int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
             }
         }
     }
+    // проверка на победку
+    if (map.get_wave_number() >= map.get_wave_count() && enemy_list.size() == 0){
+        exit_code = 1;
+    }
+
+    return exit_code;
 }

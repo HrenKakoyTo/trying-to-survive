@@ -11,14 +11,12 @@
 
 class hero: public creature{
 private:
-    projectile* projectile_type;
-    int projectiles_per_shot;
     int time_to_shot;
     int cooldown;
-    int accuracy;
+    float accuracy;
 public:
     virtual list<projectile*> shot();
-    void move(string direction, int map_h, int map_w);
+    void move(string direction, int upper_border, int lower_border, int left_border, int right_border);
 };
 
 

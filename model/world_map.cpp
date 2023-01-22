@@ -59,6 +59,7 @@ vector<enemy> world_map::wave_spawn(int hero_x, int hero_y) {
         return new_enemies;
     }
     tic_to_wave = wave_cooldown;
+    wave_number += 1;
     for (int i=0; i<complexity*(1+wave_number*0.2); i++){
         srand(clock());
         enemy new_enemy;
