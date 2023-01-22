@@ -98,33 +98,33 @@ CMakeFiles/untitled.dir/visual/start_menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/visual/start_menu.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\spacename\CLionProjects\trying-to-survive\visual\start_menu.cpp -o CMakeFiles\untitled.dir\visual\start_menu.cpp.s
 
-CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj: CMakeFiles/untitled.dir/flags.make
-CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
-CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj: C:/Users/spacename/CLionProjects/trying-to-survive/visual/maine_menu.h.cpp
-CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj: CMakeFiles/untitled.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj -MF CMakeFiles\untitled.dir\visual\maine_menu.h.cpp.obj.d -o CMakeFiles\untitled.dir\visual\maine_menu.h.cpp.obj -c C:\Users\spacename\CLionProjects\trying-to-survive\visual\maine_menu.h.cpp
+CMakeFiles/untitled.dir/visual/maine_menu.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/visual/maine_menu.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
+CMakeFiles/untitled.dir/visual/maine_menu.cpp.obj: C:/Users/spacename/CLionProjects/trying-to-survive/visual/maine_menu.cpp
+CMakeFiles/untitled.dir/visual/maine_menu.cpp.obj: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\spacename\CLionProjects\trying-to-survive\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/visual/maine_menu.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/visual/maine_menu.cpp.obj -MF CMakeFiles\untitled.dir\visual\maine_menu.cpp.obj.d -o CMakeFiles\untitled.dir\visual\maine_menu.cpp.obj -c C:\Users\spacename\CLionProjects\trying-to-survive\visual\maine_menu.cpp
 
-CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\spacename\CLionProjects\trying-to-survive\visual\maine_menu.h.cpp > CMakeFiles\untitled.dir\visual\maine_menu.h.cpp.i
+CMakeFiles/untitled.dir/visual/maine_menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/visual/maine_menu.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\spacename\CLionProjects\trying-to-survive\visual\maine_menu.cpp > CMakeFiles\untitled.dir\visual\maine_menu.cpp.i
 
-CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\spacename\CLionProjects\trying-to-survive\visual\maine_menu.h.cpp -o CMakeFiles\untitled.dir\visual\maine_menu.h.cpp.s
+CMakeFiles/untitled.dir/visual/maine_menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/visual/maine_menu.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\spacename\CLionProjects\trying-to-survive\visual\maine_menu.cpp -o CMakeFiles\untitled.dir\visual\maine_menu.cpp.s
 
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/main.cpp.obj" \
 "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj" \
-"CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj"
+"CMakeFiles/untitled.dir/visual/maine_menu.cpp.obj"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
 
 untitled.exe: CMakeFiles/untitled.dir/main.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/visual/start_menu.cpp.obj
-untitled.exe: CMakeFiles/untitled.dir/visual/maine_menu.h.cpp.obj
+untitled.exe: CMakeFiles/untitled.dir/visual/maine_menu.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/build.make
 untitled.exe: C:/Users/spacename/CLionProjects/trying-to-survive/SFML-2.5.1/lib/libsfml-graphics-d.a
 untitled.exe: C:/Users/spacename/CLionProjects/trying-to-survive/SFML-2.5.1/lib/libsfml-audio-d.a

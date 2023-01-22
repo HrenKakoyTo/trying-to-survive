@@ -16,7 +16,6 @@ public:
     int paint(vector <int> & ctrl_data);
     void draw();
     void menu_screen();
-
 };
 
 

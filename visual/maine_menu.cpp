@@ -11,18 +11,19 @@ void game_menu::menu_screen()
     bg.loadFromFile("./texture/___");
     Sprite s_new_game, s_exit, s_bg;
     s_new_game.setPosition(100,300);
-    s_exit.setPosition(50, 350);
+    s_exit.setPosition(100, 350);
     s_bg.setPosition(0, 0);
 
-    if(IntRect())
-    {
-             
-
-        }
-    }
 
 
 
 
+
+
+
+
+    window->draw(s_new_game);
+    window->draw(s_exit);
+    window->draw(s_bg);
 }
 
