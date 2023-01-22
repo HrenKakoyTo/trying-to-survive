@@ -1,6 +1,6 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-#include "../visual/maine_menu.h"
+#include "../visual/main_menu.h"
 #include "../visual/start_menu.h"
 #include "../visual/view_game.h"
 #include "../model/game.h"
@@ -8,13 +8,13 @@
 class controller
 {
 private:
-    int map_num;
-    int hero_num;
-
+    vector<int> control_data; // click,  mouse_x, mouse_y, hero_num, map_num, won or lost.
+    int view_num;
+    game game;
     sf::RenderWindow* window;
     view* view;
 public:
+    controller();
     void play();
-    void game();
 };
 

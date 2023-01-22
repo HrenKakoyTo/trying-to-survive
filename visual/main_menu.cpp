@@ -1,8 +1,8 @@
-#include "maine_menu.h"
+#include "main_menu.h"
 
 
 
-void game_menu::menu_screen()
+void main_menu::menu_screen()
 {
     auto window = get_window();
     Texture new_game, exit, bg;

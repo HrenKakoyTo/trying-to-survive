@@ -1,76 +1,101 @@
 #include "controller.h"
+
+controller::controller():control_data(6,0), view_num(2), window(new RenderWindow),
+view(new main_menu),game (0,0,view){
+    window = new sf::RenderWindow (sf::VideoMode(800, 600), "game");
+    window->setFramerateLimit(20);
+}
+
+
+
 void controller::play() {
 
     sf::Clock clock;
-    window = new sf::RenderWindow (sf::VideoMode(800, 600), "game");
-    window->setFramerateLimit(20);
     sf::Event event;
 
     string key; //нажатая клавиша
 
     while (window->isOpen()) {
+
+        sf::Vector2i pixelPos = sf::Mouse::getPosition();
+        sf::Vector2f worldPos = window->mapPixelToCoords(pixelPos);
+
+        control_data[0] = sf::Mouse::isButtonPressed(sf::Mouse::Left);
+        control_data[1] = worldPos.x;
+        control_data[2] = worldPos.y;
+
+        key.clear();
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+            key = "ul";
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+            key = "dl";
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+            key = "ur";
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+            key = "dr";
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+            key = "u";
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+            key = "d";
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+            key = "l";
+        }
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+            key = "r";
+        }
+
         while (window->pollEvent(event)) {
 
             if (event.type == sf::Event::Closed) {
                 window->close();
             }
+        }
 
-            switch (view->paint()) {
-                case 1: {
-                    // menu_num
-                }
-                case 2: {
-
-                }
-                case 3: {
-
+        switch (view->paint(control_data)) {
+            case 1: { // в старт-меню
+                if (view_num != 1){
+                    view = new start_menu;
+                    view_num = 1;
                 }
             }
-
-            key.clear();
-
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-                key = "ul";
+            case 2: { // в главное меню
+                if (view_num != 2){
+                    view = new main_menu;
+                    view_num = 2;
+                }
             }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-                key = "dl";
+            case 3: { // новая игра
+                if (view_num != 3){
+                    view = new view_game;
+                    class game Game(control_data[3], control_data[3], view);
+                    view_num = 3;
+                }
             }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-                key = "ur";
+            case -1: { // выход
+                window->close();
+                return;
             }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-                key = "dr";
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-                key = "u";
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-                key = "d";
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-                key = "l";
-            }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-                key = "r";
-            }
-
-            if (Game.tic()) {
-                n = view.paint();
-                switch (condition) {
+        }
+        if (view_num == 3){
+            int n = game.tic(key, control_data[0],
+                             (int) worldPos.x, (int) worldPos.y);
+            if (n != 0) {
+                control_data[5] = n;
+                switch (view->paint(control_data)) {
                     case 1:
-                        newgame
-                    case 2:
-                        exit
-                    default:
-
+                        view = new start_menu;
+                        view_num = 1;
+                    case -1:
+                        window->close();
+                        return;
                 }
             }
-
-
-            sf::Vector2i pixelPos = sf::Mouse::getPosition();
-            sf::Vector2f worldPos = window->mapPixelToCoords(pixelPos);
-            Game.tic(key, sf::Mouse::isButtonPressed(sf::Mouse::Left), (int) worldPos.x, (int) worldPos.y);
-
         }
         window->clear();
         window->display();

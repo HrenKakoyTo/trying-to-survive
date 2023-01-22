@@ -19,4 +19,5 @@ list<projectile*> petr::shot() {
     list<projectile*> bullet;
     bullet.push_back(new class bullet("standard_bullet", 10, 10, 15, 20, get_x(),
             get_y(), x_mult, y_mult, 50));
+    return bullet;
 }
