@@ -9,8 +9,11 @@ void controller::play() {
     sf::Event event;
 
     game Game;
+    string key; //нажатая клавиша
+
     while (window.pollEvent(event))
     {
+
         if (event.type == sf::Event::Closed)
             window.close();
 
@@ -29,7 +32,7 @@ void controller::play() {
 
            }
        }
-       string key;
+
        key.clear();
 
        if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
@@ -71,5 +74,6 @@ void controller::play() {
 
 
     }
-
+    window.clear();
+    window.display();
 };
