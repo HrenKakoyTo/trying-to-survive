@@ -233,6 +233,36 @@ CMakeFiles/untitled.dir/model/enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/model/enemy.cpp.s"
 	A:\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "A:\Clion progects\trying-to-survive\model\enemy.cpp" -o CMakeFiles\untitled.dir\model\enemy.cpp.s
 
+CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
+CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: A:/Clion\ progects/trying-to-survive/visual/main_menu.cpp
+CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/untitled.dir/visual/main_menu.cpp.obj"
+	A:\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/visual/main_menu.cpp.obj -MF CMakeFiles\untitled.dir\visual\main_menu.cpp.obj.d -o CMakeFiles\untitled.dir\visual\main_menu.cpp.obj -c "A:\Clion progects\trying-to-survive\visual\main_menu.cpp"
+
+CMakeFiles/untitled.dir/visual/main_menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/visual/main_menu.cpp.i"
+	A:\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "A:\Clion progects\trying-to-survive\visual\main_menu.cpp" > CMakeFiles\untitled.dir\visual\main_menu.cpp.i
+
+CMakeFiles/untitled.dir/visual/main_menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/visual/main_menu.cpp.s"
+	A:\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "A:\Clion progects\trying-to-survive\visual\main_menu.cpp" -o CMakeFiles\untitled.dir\visual\main_menu.cpp.s
+
+CMakeFiles/untitled.dir/visual/view_game.cpp.obj: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/visual/view_game.cpp.obj: CMakeFiles/untitled.dir/includes_CXX.rsp
+CMakeFiles/untitled.dir/visual/view_game.cpp.obj: A:/Clion\ progects/trying-to-survive/visual/view_game.cpp
+CMakeFiles/untitled.dir/visual/view_game.cpp.obj: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/untitled.dir/visual/view_game.cpp.obj"
+	A:\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/visual/view_game.cpp.obj -MF CMakeFiles\untitled.dir\visual\view_game.cpp.obj.d -o CMakeFiles\untitled.dir\visual\view_game.cpp.obj -c "A:\Clion progects\trying-to-survive\visual\view_game.cpp"
+
+CMakeFiles/untitled.dir/visual/view_game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/visual/view_game.cpp.i"
+	A:\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "A:\Clion progects\trying-to-survive\visual\view_game.cpp" > CMakeFiles\untitled.dir\visual\view_game.cpp.i
+
+CMakeFiles/untitled.dir/visual/view_game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/visual/view_game.cpp.s"
+	A:\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "A:\Clion progects\trying-to-survive\visual\view_game.cpp" -o CMakeFiles\untitled.dir\visual\view_game.cpp.s
+
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/main.cpp.obj" \
@@ -245,7 +275,9 @@ untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/model/world_object.cpp.obj" \
 "CMakeFiles/untitled.dir/model/bullet.cpp.obj" \
 "CMakeFiles/untitled.dir/model/creature.cpp.obj" \
-"CMakeFiles/untitled.dir/model/enemy.cpp.obj"
+"CMakeFiles/untitled.dir/model/enemy.cpp.obj" \
+"CMakeFiles/untitled.dir/visual/main_menu.cpp.obj" \
+"CMakeFiles/untitled.dir/visual/view_game.cpp.obj"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
@@ -261,6 +293,8 @@ untitled.exe: CMakeFiles/untitled.dir/model/world_object.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/model/bullet.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/model/creature.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/model/enemy.cpp.obj
+untitled.exe: CMakeFiles/untitled.dir/visual/main_menu.cpp.obj
+untitled.exe: CMakeFiles/untitled.dir/visual/view_game.cpp.obj
 untitled.exe: CMakeFiles/untitled.dir/build.make
 untitled.exe: A:/Clion\ progects/trying-to-survive/SFML-2.5.1/lib/libsfml-graphics-d.a
 untitled.exe: A:/Clion\ progects/trying-to-survive/SFML-2.5.1/lib/libsfml-audio-d.a
@@ -269,7 +303,7 @@ untitled.exe: A:/Clion\ progects/trying-to-survive/SFML-2.5.1/lib/libsfml-system
 untitled.exe: CMakeFiles/untitled.dir/linklibs.rsp
 untitled.exe: CMakeFiles/untitled.dir/objects1.rsp
 untitled.exe: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable untitled.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="A:\Clion progects\trying-to-survive\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable untitled.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

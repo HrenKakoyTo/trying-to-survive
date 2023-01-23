@@ -19,7 +19,7 @@ private:
     world_map map;
     vector<projectile*> projectile_list;
     vector<enemy> enemy_list;
-    view* view;
+    view_module* view;
 public:
     game(int hero_type, int map_type, class view* & view);
     int tic(string direction, bool is_shooting, int mouse_x, int mouse_y);

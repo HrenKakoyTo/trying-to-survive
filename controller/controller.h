@@ -3,6 +3,7 @@
 #include "../visual/main_menu.h"
 #include "../visual/start_menu.h"
 #include "../visual/view_game.h"
+#include "../visual/view.h"
 #include "../model/game.h"
 
 class controller

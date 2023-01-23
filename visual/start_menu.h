@@ -4,10 +4,12 @@
 
 #include "view.h"
 
-class start_menu: public view{
+class start_menu: public view_module{
 public:
-    int paint(vector <int> & ctrl_data);
-    vector <string> hero_icon;
-    vector <string> map;
-    vector <string> description;
+    int paint(vector <int> & ctrl_data) override;
+    void menu_screen() override;
+    int button_check() override;
+private:
+    vector <string> hero_icons = {"petr"};
+    vector <string> maps = {"fon_grass"};
 };

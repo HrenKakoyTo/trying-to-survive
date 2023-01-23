@@ -18,7 +18,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "A:/Clion progects/trying-to-survive/model/projectile.cpp" "CMakeFiles/untitled.dir/model/projectile.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/projectile.cpp.obj.d"
   "A:/Clion progects/trying-to-survive/model/world_map.cpp" "CMakeFiles/untitled.dir/model/world_map.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/world_map.cpp.obj.d"
   "A:/Clion progects/trying-to-survive/model/world_object.cpp" "CMakeFiles/untitled.dir/model/world_object.cpp.obj" "gcc" "CMakeFiles/untitled.dir/model/world_object.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/visual/main_menu.cpp" "CMakeFiles/untitled.dir/visual/main_menu.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/main_menu.cpp.obj.d"
   "A:/Clion progects/trying-to-survive/visual/start_menu.cpp" "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj.d"
+  "A:/Clion progects/trying-to-survive/visual/view_game.cpp" "CMakeFiles/untitled.dir/visual/view_game.cpp.obj" "gcc" "CMakeFiles/untitled.dir/visual/view_game.cpp.obj.d"
   )
 
 # Targets to which this target links.

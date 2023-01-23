@@ -5,7 +5,7 @@
 #include "view_game.h"
 
 void view_game::draw_element(int x, int y, string texture_name, float degree) {
-    auto window = get_window(); // в каждой функции берёшь окно на котором надо рисовать
+    auto window = get_window();
     Texture game_element;
     game_element.loadFromFile("./texture"+texture_name+".png");
     Sprite s_texture_name;
@@ -15,8 +15,8 @@ void view_game::draw_element(int x, int y, string texture_name, float degree) {
     g_degree = degree * (180/3,14);
     s_texture_name.setRotation(g_degree);
     window->draw(s_texture_name);
-  //важно ^^^  методы вызываешь через стрелочку
 }
+
 void view_game::draw_interface(int hp, int wp_now, int wp_total) {
     auto window = get_window();
 
@@ -42,5 +42,32 @@ Text wave_point;
     window->draw(wave_point);
 }
 
+void view_game::menu_screen()
+{
+    auto window = get_window();
+    Texture new_game, back, bg;
+    new_game.loadFromFile("./texture/__");
+    back.loadFromFile("./texture/___");
+    bg.loadFromFile("./texture/___");
+    Sprite s_new_game, s_back, s_bg;
+    s_new_game.setPosition(100,300);
+    s_back.setPosition(100, 350);
+    s_bg.setPosition(0, 0);
 
+    window->draw(s_new_game);
+    window->draw(s_back);
+    window->draw(s_bg);
+}
 
+int view_game::button_check() {
+
+}
+
+int view_game::paint(vector<int> &ctrl_data) {
+    int return_value = 0;
+    if (ctrl_data[0]){
+        return_value = button_check();
+    }
+    menu_screen();
+    return return_value;
+}

@@ -3,10 +3,12 @@
 #include <string>
 #include "view.h"
 
-class view_game: public view
+class view_game: public view_module
 {
 public:
     void draw_element(int x, int y, string texture_name, float degree) override;
     void draw_interface(int hp, int wp_now, int wp_total) override;
-    int paint(vector <int> & ctrl_data);
+    int paint(vector <int> & ctrl_data)override;
+    void menu_screen() override;
+    int button_check() override;
 };

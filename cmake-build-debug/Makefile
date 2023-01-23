@@ -368,6 +368,30 @@ model/world_object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/model/world_object.cpp.s
 .PHONY : model/world_object.cpp.s
 
+visual/main_menu.obj: visual/main_menu.cpp.obj
+.PHONY : visual/main_menu.obj
+
+# target to build an object file
+visual/main_menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/main_menu.cpp.obj
+.PHONY : visual/main_menu.cpp.obj
+
+visual/main_menu.i: visual/main_menu.cpp.i
+.PHONY : visual/main_menu.i
+
+# target to preprocess a source file
+visual/main_menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/main_menu.cpp.i
+.PHONY : visual/main_menu.cpp.i
+
+visual/main_menu.s: visual/main_menu.cpp.s
+.PHONY : visual/main_menu.s
+
+# target to generate assembly for a file
+visual/main_menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/main_menu.cpp.s
+.PHONY : visual/main_menu.cpp.s
+
 visual/start_menu.obj: visual/start_menu.cpp.obj
 .PHONY : visual/start_menu.obj
 
@@ -391,6 +415,30 @@ visual/start_menu.s: visual/start_menu.cpp.s
 visual/start_menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/start_menu.cpp.s
 .PHONY : visual/start_menu.cpp.s
+
+visual/view_game.obj: visual/view_game.cpp.obj
+.PHONY : visual/view_game.obj
+
+# target to build an object file
+visual/view_game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view_game.cpp.obj
+.PHONY : visual/view_game.cpp.obj
+
+visual/view_game.i: visual/view_game.cpp.i
+.PHONY : visual/view_game.i
+
+# target to preprocess a source file
+visual/view_game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view_game.cpp.i
+.PHONY : visual/view_game.cpp.i
+
+visual/view_game.s: visual/view_game.cpp.s
+.PHONY : visual/view_game.s
+
+# target to generate assembly for a file
+visual/view_game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view_game.cpp.s
+.PHONY : visual/view_game.cpp.s
 
 # Help Target
 help:
@@ -431,9 +479,15 @@ help:
 	@echo ... model/world_object.obj
 	@echo ... model/world_object.i
 	@echo ... model/world_object.s
+	@echo ... visual/main_menu.obj
+	@echo ... visual/main_menu.i
+	@echo ... visual/main_menu.s
 	@echo ... visual/start_menu.obj
 	@echo ... visual/start_menu.i
 	@echo ... visual/start_menu.s
+	@echo ... visual/view_game.obj
+	@echo ... visual/view_game.i
+	@echo ... visual/view_game.s
 .PHONY : help
 
 
