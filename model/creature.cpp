@@ -21,4 +21,5 @@ void creature::set_hp(int hp) {
 bool creature::hit(int damage){
     int hp = get_hp() - damage;
     this->hp = hp;
+    return hp<1;
 };
