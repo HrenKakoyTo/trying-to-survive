@@ -11,7 +11,7 @@
 class petr: public hero{
 public:
     petr();
-    list<projectile*> shot()override;
+    list<projectile*> shot() override;
 };
 
 

@@ -13,7 +13,6 @@ private:
     int hp;
     int speed;
 public:
-    creature();
     int get_speed();
     int get_hp();
     void set_speed(int speed);

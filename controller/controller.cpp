@@ -1,9 +1,12 @@
 #include "controller.h"
+#include "../model/game.h"
+#include "../visual/main_menu.h"
 
-controller::controller():control_data(6,0), view_num(2), window(new RenderWindow),
-view(new main_menu),game (0,0,view){
+controller::controller():control_data(6,0), view_num(2), window(),
+view(new main_menu){
     window = new sf::RenderWindow (sf::VideoMode(800, 600), "game");
     window->setFramerateLimit(20);
+    game = new class game (0,0,view);
 }
 
 
@@ -83,7 +86,7 @@ void controller::play() {
             }
         }
         if (view_num == 3){
-            int n = game.tic(key, control_data[0],
+            int n = game->tic(key, control_data[0],
                              (int) worldPos.x, (int) worldPos.y);
             if (n != 0) {
                 control_data[5] = n;

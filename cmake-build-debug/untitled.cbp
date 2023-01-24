@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="A:/Clion progects/trying-to-survive/controller/controller.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/controller/controller.h">
+			<Option target="untitled"/>
+		</Unit>
 		<Unit filename="A:/Clion progects/trying-to-survive/main.cpp">
 			<Option target="untitled"/>
 		</Unit>
@@ -151,6 +157,12 @@
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="A:/Clion progects/trying-to-survive/visual/start_menu.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/visual/view.cpp">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="A:/Clion progects/trying-to-survive/visual/view.h">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="A:/Clion progects/trying-to-survive/visual/view_game.cpp">

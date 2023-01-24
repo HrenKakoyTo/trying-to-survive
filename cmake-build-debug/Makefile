@@ -128,6 +128,30 @@ untitled/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
 .PHONY : untitled/fast
 
+controller/controller.obj: controller/controller.cpp.obj
+.PHONY : controller/controller.obj
+
+# target to build an object file
+controller/controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/controller/controller.cpp.obj
+.PHONY : controller/controller.cpp.obj
+
+controller/controller.i: controller/controller.cpp.i
+.PHONY : controller/controller.i
+
+# target to preprocess a source file
+controller/controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/controller/controller.cpp.i
+.PHONY : controller/controller.cpp.i
+
+controller/controller.s: controller/controller.cpp.s
+.PHONY : controller/controller.s
+
+# target to generate assembly for a file
+controller/controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/controller/controller.cpp.s
+.PHONY : controller/controller.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -416,6 +440,30 @@ visual/start_menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/start_menu.cpp.s
 .PHONY : visual/start_menu.cpp.s
 
+visual/view.obj: visual/view.cpp.obj
+.PHONY : visual/view.obj
+
+# target to build an object file
+visual/view.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.obj
+.PHONY : visual/view.cpp.obj
+
+visual/view.i: visual/view.cpp.i
+.PHONY : visual/view.i
+
+# target to preprocess a source file
+visual/view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.i
+.PHONY : visual/view.cpp.i
+
+visual/view.s: visual/view.cpp.s
+.PHONY : visual/view.s
+
+# target to generate assembly for a file
+visual/view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/visual/view.cpp.s
+.PHONY : visual/view.cpp.s
+
 visual/view_game.obj: visual/view_game.cpp.obj
 .PHONY : visual/view_game.obj
 
@@ -449,6 +497,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled
+	@echo ... controller/controller.obj
+	@echo ... controller/controller.i
+	@echo ... controller/controller.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -485,6 +536,9 @@ help:
 	@echo ... visual/start_menu.obj
 	@echo ... visual/start_menu.i
 	@echo ... visual/start_menu.s
+	@echo ... visual/view.obj
+	@echo ... visual/view.i
+	@echo ... visual/view.s
 	@echo ... visual/view_game.obj
 	@echo ... visual/view_game.i
 	@echo ... visual/view_game.s

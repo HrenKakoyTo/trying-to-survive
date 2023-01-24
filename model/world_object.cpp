@@ -18,7 +18,7 @@ int world_object::get_width() const{
 int world_object::get_height() const{
     return height;
 }
-int world_object::get_angle_of_rotation() const{
+float world_object::get_angle_of_rotation() const{
     return angle_of_rotation;
 }
 

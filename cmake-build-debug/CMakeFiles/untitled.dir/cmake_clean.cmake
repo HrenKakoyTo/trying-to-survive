@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/untitled.dir/controller/controller.cpp.obj"
+  "CMakeFiles/untitled.dir/controller/controller.cpp.obj.d"
   "CMakeFiles/untitled.dir/main.cpp.obj"
   "CMakeFiles/untitled.dir/main.cpp.obj.d"
   "CMakeFiles/untitled.dir/model/bullet.cpp.obj"
@@ -23,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/visual/main_menu.cpp.obj.d"
   "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj"
   "CMakeFiles/untitled.dir/visual/start_menu.cpp.obj.d"
+  "CMakeFiles/untitled.dir/visual/view.cpp.obj"
+  "CMakeFiles/untitled.dir/visual/view.cpp.obj.d"
   "CMakeFiles/untitled.dir/visual/view_game.cpp.obj"
   "CMakeFiles/untitled.dir/visual/view_game.cpp.obj.d"
   "libuntitled.dll.a"

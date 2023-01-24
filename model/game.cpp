@@ -4,6 +4,7 @@
 
 #include "game.h"
 #include "petr.h"
+#include "../visual/view.h"
 
 struct enemy_type{
     string type;
@@ -107,18 +108,18 @@ int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
     return exit_code;
 }
 void game::throwing_data_into_the_view(){
-    view->draw_element(0-player->get_x(), 0-player->get_y(), map.get_map_name(), 0); // карта
+    int player_x = view->get_window()->getSize().x-player->get_width()/2;
+    int player_y = view->get_window()->getSize().y-player->get_height()/2;
+    view->draw_element(player_x, player_y, map.get_map_name(), 0); // карта
     for (auto it = enemy_list.begin(); it!=enemy_list.end();  it++){ // противники
-        view->draw_element(it->get_x()-player->get_x(), it->get_y()-player->get_y(),
+        view->draw_element(it->get_x()-player_x, it->get_y()-player_y,
                            player->get_type(), player->get_angle_of_rotation());
     }
 
-    view->draw_element((view->get_window()->getSize().x-player->get_width())/2, // персонаж
-                       (view->get_window()->getSize().y-player->get_height())/2,
-                       player->get_type(), player->get_angle_of_rotation());
+    view->draw_element(player_x, player_y,player->get_type(), player->get_angle_of_rotation());
 
     for (auto it = projectile_list.begin(); it!=projectile_list.end();  it++){ // снаряды
-        view->draw_element((*it)->get_x()-player->get_x(), (*it)->get_y()-player->get_y(),
+        view->draw_element((*it)->get_x()-player_x, (*it)->get_y()-player_y,
                            player->get_type(), player->get_angle_of_rotation());
     }
     view->draw_interface(player->get_hp(), map.get_wave_number(), map.get_wave_count());

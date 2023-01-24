@@ -10,7 +10,7 @@ void bullet::move() {
     double new_y = get_y() + y_multiplier * get_speed();
     set_y(new_y);
 }
-bool bullet::hit(creature* & creature) {
+bool bullet::hit() {
     return true;
 }
 
