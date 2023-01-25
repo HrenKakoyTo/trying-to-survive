@@ -27,7 +27,7 @@ public:
     void set_height(int h);
     float get_angle_of_rotation() const;
     void set_angle_of_rotation(float angle);
-    virtual bool hit(int damage);
+    virtual bool hit(int damage) = 0;
 };
 
 

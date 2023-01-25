@@ -2,7 +2,7 @@
 #include "../model/game.h"
 #include "../visual/main_menu.h"
 
-controller::controller():control_data(6,0), view_num(2), window(),
+controller::controller():control_data(6,0), view_num(3), window(),
 view(new main_menu){
     window = new sf::RenderWindow (sf::VideoMode(800, 600), "game");
     window->setFramerateLimit(20);

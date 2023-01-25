@@ -23,7 +23,7 @@ public:
     float fet_accuracy();
 
     float direction_to_mouse(int x, int y);
-    virtual list<projectile*> shot();
+    virtual list<projectile*> shot() = 0;
     void move(string direction, int upper_border, int lower_border, int left_border, int right_border);
 };
 
