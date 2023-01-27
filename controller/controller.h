@@ -14,7 +14,7 @@ private:
     std::vector<int> control_data; // click,  mouse_x, mouse_y, hero_num, map_num, won or lost.
     int view_num;
     game* game;
-    sf::RenderWindow* window;
+    sf::RenderWindow window;
     view* view;
 public:
     controller();

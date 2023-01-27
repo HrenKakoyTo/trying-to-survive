@@ -14,8 +14,9 @@ using namespace sf;
 
 class view {
 private:
-    RenderWindow window;
+    RenderWindow* window;
 public:
+    view(RenderWindow* window);
     virtual void draw_element(int x, int y, string texture_name, float degree) = 0;
     virtual void draw_interface(int hp, int wp_now, int wp_total) = 0;
     virtual int paint(vector <int> & ctrl_data) = 0;

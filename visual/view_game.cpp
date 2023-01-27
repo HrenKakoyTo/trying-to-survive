@@ -43,5 +43,13 @@ Text wave_point;
 }
 
 int view_game::paint(vector<int> &ctrl_data) {
+    auto window = get_window();
+    if (ctrl_data[5] == 1){  // win
+
+    }
+    else {  //lose
+
+    }
+     // + кнопки
     return 0;
 }

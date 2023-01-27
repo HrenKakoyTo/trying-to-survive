@@ -27,23 +27,25 @@ vector<map_type> map_types;
 vector<enemy_type> enemy_types;
 vector<string> hero_types = {"petr"};
 
-void start() {
+void game::start(int hero_type, int map_type) {
 
     enemy_type pg = {"pg_right", 70, 70, 200, 1, 1}; // перечисление противников
 
-    list<enemy> grass_enemies; // пречисление карт
+    list<enemy> grass_enemies = {}; // пречисление карт
     grass_enemies.push_back(enemy(pg.type, 0, 0, pg.w, pg.h, pg.speed, pg.damage, pg.hp));
-    map_type grass = {"fon_grass", 10, 3000, 3000,
+    struct map_type grass = {"fon_grass", 10, 3000, 3000,
                       200, 5, grass_enemies};
+    map_types.push_back(grass);
+    map = world_map(map_types[map_type].complexity,map_types[map_type].width, map_types[map_type].height,
+                    map_types[map_type].wave_cooldown,map_types[map_type].wave_count, map_types[map_type].enemy_types);
 }
 
 bool collision_check(bool x1, bool y1,int w1, int h1, bool x2, bool y2, int w2, int h2){
     return x1+w1 > x2 && x2+w2 > x1 && y1+h1 > y2 && y2+h2 > y1;
 }
 
-game::game(int hero_type, int map_type, class view *&view):map(map_types[map_type].complexity,
-        map_types[map_type].width, map_types[map_type].height,map_types[map_type].wave_cooldown,
-        map_types[map_type].wave_count, map_types[map_type].enemy_types) {
+game::game(int hero_type, int map_type, class view *&view):map() {
+    start(hero_type, map_type);
     //создание персонажа
     if (hero_types[hero_type] == "petr"){
         player = new petr();
@@ -52,7 +54,6 @@ game::game(int hero_type, int map_type, class view *&view):map(map_types[map_typ
 
     }
     this->view = view;
-    start();
 }
 
 int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {

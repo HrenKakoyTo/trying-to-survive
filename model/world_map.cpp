@@ -8,8 +8,8 @@
 world_map::world_map(int complexity, int width, int height, int wave_cooldown, int wave_count, list<enemy> enemy_types):
 complexity(complexity), width(width), height(height), wave_cooldown(wave_cooldown), wave_count(wave_count), enemy_list(),
 wave_number(0), tic_to_wave(wave_cooldown){
-    for (auto it = enemy_types.begin(); it!=enemy_types.end(); it++){
-        enemy_list.push_back(*it);
+    for (auto & enemy_type : enemy_types){
+        enemy_list.push_back(enemy_type);
     }
 }
 
