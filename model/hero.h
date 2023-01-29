@@ -14,15 +14,15 @@ class hero: public creature{
 private:
     int time_to_shot;
     int cooldown;
-    float accuracy;
+    double accuracy;
 public:
     void set_cooldown(int tics);
     void set_accuracy(float angle);
 
     int get_cooldown();
-    float fet_accuracy();
+    double fet_accuracy();
 
-    float direction_to_mouse(int x, int y);
+    double direction_to_mouse(int x, int y);
     virtual list<projectile*> shot() = 0;
     void move(string direction, int upper_border, int lower_border, int left_border, int right_border);
 };

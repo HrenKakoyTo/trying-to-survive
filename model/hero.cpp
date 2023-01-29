@@ -3,8 +3,8 @@
 //
 #include "hero.h"
 
-float hero::direction_to_mouse(int x, int y) {
-    float angle = ::atan2(y - get_y(), x - get_x());
+double hero::direction_to_mouse(int x, int y) {
+    double angle = ::atan2(y - get_y(), x - get_x());
     set_angle_of_rotation(angle);
     return angle;
 }
@@ -19,13 +19,13 @@ void hero::set_accuracy(float angle){
 int hero::get_cooldown(){
     return cooldown;
 }
-float hero::fet_accuracy(){
+double hero::fet_accuracy(){
     return accuracy;
 }
 
 void hero::move(string direction, int upper_border, int lower_border, int left_border, int right_border) {
-    float x = get_x();
-    float y = get_y();
+    double x = get_x();
+    double y = get_y();
     int speed = get_speed();
     if (direction.size() == 1)
     if (direction == "l")

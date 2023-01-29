@@ -6,6 +6,7 @@
 #include "bullet.h"
 
 petr::petr() {
+    set_type("petr_right");
     set_hp(100);
     set_speed(2);
     set_cooldown(20);
@@ -13,7 +14,7 @@ petr::petr() {
 }
 
 list<projectile*> petr::shot() {
-    float angle = get_angle_of_rotation();
+    double angle = get_angle_of_rotation();
     int x_mult = cos(angle);
     int y_mult = sin(angle);
     list<projectile*> bullet;

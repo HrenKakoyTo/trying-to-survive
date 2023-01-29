@@ -16,12 +16,12 @@ enemy::enemy(string type, int x, int y, int w, int h, int speed, int damage, int
     set_hp(hp);
 }
 
-float enemy::direction_to_hero(hero* &hero) {
+double enemy::direction_to_hero(hero* &hero) {
     int hero_x = hero->get_x();
     int hero_y = hero->get_y();
     int x = this->get_x();
     int y = this->get_y();
-    float angle = ::atan2(hero_y - y, hero_x - x);
+    double angle = ::atan2(hero_y - y, hero_x - x);
     return angle;
 }
 void enemy:: move(hero* & hero){
@@ -31,7 +31,7 @@ void enemy:: move(hero* & hero){
     int hero_h = hero->get_height();
     int hero_x = hero->get_x();
     int hero_y = hero->get_y();
-    float angle = direction_to_hero(hero);
+    double angle = direction_to_hero(hero);
     set_angle_of_rotation(angle);
     int new_x = get_x() + get_speed() * cos(angle);
     int new_y = get_y() + get_speed() * sin(angle);

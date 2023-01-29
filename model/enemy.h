@@ -14,7 +14,7 @@ private:
     int damage;
 public:
     enemy(string type, int x, int y, int w, int h, int speed, int damage, int hp);
-    float direction_to_hero(hero* & hero);
+    double direction_to_hero(hero* & hero);
     void move(hero* & hero);
 };
 

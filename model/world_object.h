@@ -11,21 +11,21 @@ using namespace std;
 class world_object {
 private:
     string type;
-    float x,y;
+    double x,y;
     int width, height; // x, y
-    float angle_of_rotation;
+    double angle_of_rotation;
 public:
     string get_type() const;
     void set_type(string type);
-    float get_x() const;
+    double get_x() const;
     void set_x(int x);
-    float get_y() const;
+    double get_y() const;
     void set_y(int y);
     int get_width() const;
     void set_width(int w);
     int get_height() const;
     void set_height(int h);
-    float get_angle_of_rotation() const;
+    double get_angle_of_rotation() const;
     void set_angle_of_rotation(float angle);
     virtual bool hit(int damage) = 0;
 };

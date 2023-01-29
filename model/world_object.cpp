@@ -6,10 +6,10 @@
 string world_object::get_type() const{
     return type;
 }
-float world_object::get_x() const{
+double world_object::get_x() const{
     return x;
 }
-float world_object::get_y() const{
+double world_object::get_y() const{
     return y;
 }
 int world_object::get_width() const{
@@ -18,7 +18,7 @@ int world_object::get_width() const{
 int world_object::get_height() const{
     return height;
 }
-float world_object::get_angle_of_rotation() const{
+double world_object::get_angle_of_rotation() const{
     return angle_of_rotation;
 }
 

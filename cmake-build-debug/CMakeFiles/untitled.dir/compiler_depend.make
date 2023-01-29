@@ -1043,6 +1043,8 @@ CMakeFiles/untitled.dir/model/game.cpp.obj: C:/Users/spacename/CLionProjects/try
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/world_map.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/petr.h \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view.h \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window.hpp \
@@ -1087,8 +1089,6 @@ CMakeFiles/untitled.dir/model/game.cpp.obj: C:/Users/spacename/CLionProjects/try
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/String.hpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Utf.hpp \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \

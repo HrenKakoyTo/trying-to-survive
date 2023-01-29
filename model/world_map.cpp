@@ -5,9 +5,9 @@
 #include <time.h>
 #include "world_map.h"
 
-world_map::world_map(int complexity, int width, int height, int wave_cooldown, int wave_count, list<enemy> enemy_types):
+world_map::world_map(string map_name, int complexity, int width, int height, int wave_cooldown, int wave_count, list<enemy> enemy_types):
 complexity(complexity), width(width), height(height), wave_cooldown(wave_cooldown), wave_count(wave_count), enemy_list(),
-wave_number(0), tic_to_wave(wave_cooldown){
+wave_number(0), tic_to_wave(0), map_name(map_name){
     for (auto & enemy_type : enemy_types){
         enemy_list.push_back(enemy_type);
     }

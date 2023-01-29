@@ -21,7 +21,7 @@ private:
     int wave_count;
 public:
     world_map(){};
-    world_map(int complexity, int width, int height, int wave_cooldown, int wave_count, list<enemy> enemy_types);
+    world_map(string map_name, int complexity, int width, int height, int wave_cooldown, int wave_count, list<enemy> enemy_types);
 
     string get_map_name() const;
     int get_complexity() const;
