@@ -77,7 +77,7 @@ vector<enemy> world_map::wave_spawn(int hero_x, int hero_y) {
     tic_to_wave = wave_cooldown;
     wave_number += 1;
     for (int i=0; i<complexity*(1+wave_number*0.2); i++){
-        srand(clock());
+       // srand(clock());
         enemy new_enemy = enemy_list[rand()%enemy_list.size()];
         if (rand()%2){ // 1 left or right
             if (rand()%2){ // left side

@@ -11,20 +11,20 @@
 #ifndef UNTITLED_GAME_H
 #define UNTITLED_GAME_H
 
-class view;
-
 class game {
 private:
     hero* player;
     world_map map;
-    vector<projectile*> projectile_list;
-    vector<enemy> enemy_list;
-    view* view;
+    list<projectile*> projectile_list;
+    list<enemy> enemy_list;
 public:
     game(int hero_type, int map_type, class view* & view);
+    world_map get_map(){return get_map();}
+    hero* get_hero(){return player;}
+    list<projectile*> get_projectiles(){return projectile_list;}
+    list<enemy> get_enemies(){return enemy_list;}
     int tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
     void start(int hero_type, int map_type);
-    void throwing_data_into_the_view();
 };
 
 

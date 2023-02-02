@@ -5,7 +5,7 @@
 
 controller::controller():control_data(6,0), view_num(2), window(sf::VideoMode(800, 600), "trying to survive"),
 view(new main_menu(&window)){
-    window.setFramerateLimit(20);
+    window.setFramerateLimit(620);
     game = new class game (0,0,view);
 }
 
@@ -19,8 +19,6 @@ void controller::play() {
     while (window.isOpen()) {
 
         window.clear();
-
-        //window.setKeyRepeatEnabled(false);
 
         sf::Vector2i pixelPos = sf::Mouse::getPosition(window);
 
@@ -62,45 +60,49 @@ void controller::play() {
                 window.close();
             }
         }
-        int k = view->paint(control_data);
-        switch (k) {
-            case 1: { // в старт-меню
-                if (view_num != 1){
-                    view = new start_menu(&window);
-                    view_num = 1;
+        if (view_num != 3) {
+            int k = view->paint(control_data);
+            switch (k) {
+                case 1: { // в старт-меню
+                    if (view_num != 1) {
+                        view = new start_menu(&window);
+                        view_num = 1;
+                    }
+                    break;
                 }
-                break;
-            }
-            case 2: { // в главное меню
-                if (view_num != 2){
-                    view = new main_menu(&window);
-                    view_num = 2;
+                case 2: { // в главное меню
+                    if (view_num != 2) {
+                        view = new main_menu(&window);
+                        view_num = 2;
+                    }
+                    break;
                 }
-                break;
-            }
-            case 3: { // новая игра
-                if (view_num != 3){
-                    view = new view_game(&window);
-                    game = new class game(control_data[3], control_data[3], view);
-                    view_num = 3;
+                case 3: { // новая игра
+                    if (view_num != 3) {
+                        view = new view_game(&window, game);
+                        game = new class game(control_data[3], control_data[3], view);
+                        view_num = 3;
+                        control_data[5] = 0;
+                    }
+                    break;
                 }
-                break;
-            }
-            case -1: { // выход
-                window.close();
-                return;
-            }
+                case -1: { // выход
+                    window.close();
+                    return;
+                }
 
+            }
         }
         if (view_num == 3){
             int n = game->tic(key, control_data[0],
                              (int) pixelPos.x, (int) pixelPos.y);
             if (n != 0) {
-                control_data[5] = n;
+                //control_data[5] = n;
                 switch (view->paint(control_data)) {
                     case 1:
                         view = new start_menu(&window);
                         view_num = 1;
+                        break;
                     case -1:
                         window.close();
                         return;
@@ -108,5 +110,6 @@ void controller::play() {
             }
         }
         window.display();
+
     }
 };

@@ -6,7 +6,6 @@
 
 #include <utility>
 #include "petr.h"
-#include "../visual/view.h"
 
 struct enemy_type{
     string type;
@@ -31,7 +30,7 @@ vector<string> hero_types = {"petr"};
 
 void game::start(int hero_type, int map_type) {
 
-    enemy_type pg = {"pg_right", 70, 70, 200, 1, 1}; // перечисление противников
+    enemy_type pg = {"pg_right", 70, 70, 200, 10, 1}; // перечисление противников
 
     list<enemy> grass_enemies; // пречисление карт
     grass_enemies.push_back(enemy(pg.type, 0, 0, pg.w, pg.h, pg.speed, pg.damage, pg.hp));
@@ -62,15 +61,14 @@ bool collision_check(bool x1, bool y1,int w1, int h1, bool x2, bool y2, int w2, 
 game::game(int hero_type, int map_type, class view *&view):map() {
     start(hero_type, map_type);
     //создание персонажа
-    this->view = view;
 }
 
 int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
     int exit_code = (player->get_hp() < 1)?(-1):(0);  // 0-играем, -1-проигрыш, 1-вин.
     // движение персонажа
     if(exit_code == 0){
-        player->move(std::move(direction), view->get_window()->getSize().y/2, map.get_height() - view->get_window()->getSize().y/2,
-                     view->get_window()->getSize().x/2, map.get_width() - view->get_window()->getSize().x/2);
+        player->move(std::move(direction), 400, map.get_height() - 400,
+                     300, map.get_width() - 300);
         player->direction_to_mouse(mouse_x, mouse_y);
     // стрельба
     if (is_shooting) {
@@ -121,23 +119,5 @@ int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
     if (map.get_wave_number() >= map.get_wave_count() && enemy_list.size() == 0){
         exit_code = 1;
     }
-    throwing_data_into_the_view();
     return exit_code;
-}
-void game::throwing_data_into_the_view(){
-    int player_x = (view->get_window()->getSize().x-player->get_width())/2;
-    int player_y = (view->get_window()->getSize().y-player->get_height())/2;
-    view->draw_element(0-player->get_x(), 0-player->get_y(), map.get_map_name(), 0); // карта
-    for (auto it = enemy_list.begin(); it!=enemy_list.end();  it++){ // противники
-        view->draw_element(it->get_x()-player->get_x()+player_x, it->get_y()-player->get_y()+player_y,
-                           it->get_type(), it->get_angle_of_rotation());
-    }
-
-    view->draw_element(player_x, player_y,player->get_type(), player->get_angle_of_rotation()); // герой
-
-    for (auto it = projectile_list.begin(); it!=projectile_list.end();  it++){ // снаряды
-        view->draw_element((*it)->get_x()-player->get_x()+player_x, (*it)->get_y()-player->get_y()+player_y,
-                           player->get_type(), player->get_angle_of_rotation());
-    }
-    view->draw_interface(player->get_hp()<0?0:player->get_hp(), map.get_wave_number(), map.get_wave_count());
 }

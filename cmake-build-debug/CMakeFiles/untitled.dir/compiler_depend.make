@@ -283,7 +283,8 @@ CMakeFiles/untitled.dir/controller/controller.cpp.obj: C:/Users/spacename/CLionP
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/main_menu.h \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/start_menu.h \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view_game.h \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view.h
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/game.h
 
 CMakeFiles/untitled.dir/main.cpp.obj: C:/Users/spacename/CLionProjects/trying-to-survive-mine/main.cpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/controller/controller.h \
@@ -1045,143 +1046,7 @@ CMakeFiles/untitled.dir/model/game.cpp.obj: C:/Users/spacename/CLionProjects/try
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/world_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/petr.h \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view.h \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Config.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Clock.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Export.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Time.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Err.hpp \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/FileInputStream.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/InputStream.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/NonCopyable.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Lock.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/MemoryInputStream.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Mutex.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Sleep.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/String.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Utf.hpp \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/algorithm \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algo.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/algorithmfwd.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_algorithm_defs.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tuple \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/array \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_map.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/execution_defs.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Utf.inl \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stream_iterator.h \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/String.inl \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Thread.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Thread.inl \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/ThreadLocal.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.inl \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Vector2.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Vector2.inl \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Vector3.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/System/Vector3.inl \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Clipboard.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Export.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Context.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/GlResource.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/ContextSettings.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Cursor.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Event.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Joystick.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Keyboard.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Mouse.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Sensor.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Touch.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/VideoMode.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/Window.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Export.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/CircleShape.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Shape.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Drawable.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Transform.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Rect.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Rect.inl \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Transformable.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/VertexArray.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Vertex.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Color.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/ConvexShape.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Font.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Glyph.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Texture.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Image.hpp \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/map \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tree.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_map.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_multimap.h \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/RectangleShape.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/View.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/RenderTexture.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/RenderWindow.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Shader.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Glsl.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Glsl.inl \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Text.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/petr.h
 
 CMakeFiles/untitled.dir/model/hero.cpp.obj: C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/hero.cpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/hero.h \
@@ -1820,15 +1685,12 @@ CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/main_menu.h \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/start_menu.h \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view_game.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
@@ -1845,6 +1707,24 @@ CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_list.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocated_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
@@ -1866,11 +1746,6 @@ CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
@@ -1884,8 +1759,6 @@ CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
@@ -1908,9 +1781,6 @@ CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string_view \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
@@ -1986,7 +1856,6 @@ CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
@@ -2070,20 +1939,40 @@ CMakeFiles/untitled.dir/visual/main_menu.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Glsl.inl \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Text.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/game.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/world_object.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/enemy.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/creature.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/hero.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/math.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/gamma.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/special_function_util.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/beta_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/projectile.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/world_map.h
 
 CMakeFiles/untitled.dir/visual/start_menu.cpp.obj: C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/start_menu.cpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/start_menu.h \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view_game.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
@@ -2100,6 +1989,24 @@ CMakeFiles/untitled.dir/visual/start_menu.cpp.obj: C:/Users/spacename/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_list.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocated_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
@@ -2121,11 +2028,6 @@ CMakeFiles/untitled.dir/visual/start_menu.cpp.obj: C:/Users/spacename/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
@@ -2139,8 +2041,6 @@ CMakeFiles/untitled.dir/visual/start_menu.cpp.obj: C:/Users/spacename/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
@@ -2163,9 +2063,6 @@ CMakeFiles/untitled.dir/visual/start_menu.cpp.obj: C:/Users/spacename/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string_view \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
@@ -2241,7 +2138,6 @@ CMakeFiles/untitled.dir/visual/start_menu.cpp.obj: C:/Users/spacename/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
@@ -2325,7 +2221,30 @@ CMakeFiles/untitled.dir/visual/start_menu.cpp.obj: C:/Users/spacename/CLionProje
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Glsl.inl \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Text.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/game.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/world_object.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/enemy.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/creature.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/hero.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/math.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/gamma.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/special_function_util.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/beta_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/projectile.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/world_map.h
 
 CMakeFiles/untitled.dir/visual/view.cpp.obj: C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view.cpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view.h \
@@ -2582,15 +2501,12 @@ CMakeFiles/untitled.dir/visual/view.cpp.obj: C:/Users/spacename/CLionProjects/tr
 
 CMakeFiles/untitled.dir/visual/view_game.cpp.obj: C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view_game.cpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/visual/view_game.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
@@ -2607,6 +2523,24 @@ CMakeFiles/untitled.dir/visual/view_game.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_list.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocated_ptr.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
@@ -2628,11 +2562,6 @@ CMakeFiles/untitled.dir/visual/view_game.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
@@ -2646,8 +2575,6 @@ CMakeFiles/untitled.dir/visual/view_game.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
@@ -2670,9 +2597,6 @@ CMakeFiles/untitled.dir/visual/view_game.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string_view \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
@@ -2748,7 +2672,6 @@ CMakeFiles/untitled.dir/visual/view_game.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_map \
-  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h \
   C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h \
@@ -2832,7 +2755,30 @@ CMakeFiles/untitled.dir/visual/view_game.cpp.obj: C:/Users/spacename/CLionProjec
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Glsl.inl \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp \
   C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/Text.hpp \
-  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/game.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/world_object.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/enemy.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/creature.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/hero.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cmath \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/x86_64-w64-mingw32/include/math.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/specfun.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/gamma.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/special_function_util.h \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/bessel_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/beta_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/ell_integral.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/exp_integral.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/hypergeometric.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/legendre_function.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/modified_bessel_func.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/poly_hermite.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/poly_laguerre.tcc \
+  C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/riemann_zeta.tcc \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/projectile.h \
+  C:/Users/spacename/CLionProjects/trying-to-survive-mine/model/world_map.h
 
 
 C:/Program\ Files/JetBrains/CLion\ 2022.3.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd:

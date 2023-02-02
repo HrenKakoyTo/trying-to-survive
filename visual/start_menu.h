@@ -10,7 +10,6 @@
 class start_menu: public view {
 public:
     start_menu(RenderWindow* window): view(window){};
-    virtual void draw_element(int x, int y, string texture_name, float degree) override {}
     virtual void draw_interface(int hp, int wp_now, int wp_total) override {}
     int paint(vector <int> & ctrl_data) override;
 private:
