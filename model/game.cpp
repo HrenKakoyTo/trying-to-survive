@@ -30,7 +30,7 @@ vector<string> hero_types = {"petr"};
 
 void game::start(int hero_type, int map_type) {
 
-    enemy_type pg = {"pg_right", 70, 70, 200, 10, 1}; // перечисление противников
+    enemy_type pg = {"pg_right", 70, 70, 200, 1, 1}; // перечисление противников
 
     list<enemy> grass_enemies; // пречисление карт
     grass_enemies.push_back(enemy(pg.type, 0, 0, pg.w, pg.h, pg.speed, pg.damage, pg.hp));
@@ -48,6 +48,9 @@ void game::start(int hero_type, int map_type) {
 
     }
 
+    player->set_x(map.get_width()/2);
+    player->set_y(map.get_height()/2);
+
     vector<enemy> new_enemies = map.wave_spawn(player->get_x(), player->get_y());
     for (auto it = new_enemies.begin(); it!= new_enemies.end(); it++){
         enemy_list.push_back(*it);
@@ -63,11 +66,11 @@ game::game(int hero_type, int map_type, class view *&view):map() {
     //создание персонажа
 }
 
-int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
+int game::tic(string dir, bool is_shooting, int mouse_x, int mouse_y) {
     int exit_code = (player->get_hp() < 1)?(-1):(0);  // 0-играем, -1-проигрыш, 1-вин.
     // движение персонажа
     if(exit_code == 0){
-        player->move(std::move(direction), 400, map.get_height() - 400,
+        player->move(dir, 400, map.get_height() - 400,
                      300, map.get_width() - 300);
         player->direction_to_mouse(mouse_x, mouse_y);
     // стрельба
@@ -90,31 +93,28 @@ int game::tic(string direction, bool is_shooting, int mouse_x, int mouse_y) {
             exit_code = -1;
     }
     // проверка на поподание
-    /*for (auto it1 = projectile_list.begin(); it1!=projectile_list.end(); it1++){
+    for (auto it1 = projectile_list.begin(); it1!=projectile_list.end() && projectile_list.size()>1; it1++){
         bool fl = true;
-        for (auto it2 = enemy_list.begin(); (it2!= enemy_list.end() && fl); it2++){
+        for (auto it2 = enemy_list.begin(); (it2!= enemy_list.end() && enemy_list.size()>1 && projectile_list.size()>1); it2++){
             if (collision_check((*it1)->get_x(), (*it1)->get_x(), (*it1)->get_width(), (*it1)->get_height(),
                                 (it2)->get_x(), (it2)->get_x(), (it2)->get_width(), (it2)->get_height())){
-                if(it2->hit((*it1)->get_damage())){
+                if(it2->hit((*it1)->get_damage()) && enemy_list.size()>1){
                     auto buf = it2;
                     it2++;
                     enemy_list.erase(buf);
-                    it2--;
                 }
-                if((*it1)->hit()){
+                else if (it2->hit((*it1)->get_damage())) enemy_list.clear();
+                if((*it1)->hit() && projectile_list.size() > 1){
                     fl = false;
                     auto buf = it1;
                     it1++;
                     projectile_list.erase(buf);
-                    if (it1 != projectile_list.end())
-                    it1--;
-                    else
-                        break;
                 }
+                else if ((*it1)->hit()) projectile_list.clear();
             }
         }
     }
-    */
+
     // проверка на победку
     if (map.get_wave_number() >= map.get_wave_count() && enemy_list.size() == 0){
         exit_code = 1;

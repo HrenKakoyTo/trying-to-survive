@@ -7,6 +7,7 @@
 #include "../model/game.h"
 
 struct texture {
+    Texture t = Texture();
     Sprite sprite = Sprite();
     string type = "";
 };
@@ -16,8 +17,8 @@ class view_game: public view {
 private: game* model;
     list <texture> enemies;
     list <texture> proj_tile;
-    Sprite map;
-    Sprite player;
+    texture map;
+    texture player;
     View View;
     void check_enemy();
     void check_projectile();

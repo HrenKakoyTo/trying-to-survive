@@ -19,7 +19,7 @@ private:
     list<enemy> enemy_list;
 public:
     game(int hero_type, int map_type, class view* & view);
-    world_map get_map(){return get_map();}
+    world_map get_map(){return map;}
     hero* get_hero(){return player;}
     list<projectile*> get_projectiles(){return projectile_list;}
     list<enemy> get_enemies(){return enemy_list;}

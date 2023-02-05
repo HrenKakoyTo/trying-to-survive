@@ -5,7 +5,7 @@
 
 controller::controller():control_data(6,0), view_num(2), window(sf::VideoMode(800, 600), "trying to survive"),
 view(new main_menu(&window)){
-    window.setFramerateLimit(620);
+    window.setFramerateLimit(20);
     game = new class game (0,0,view);
 }
 
@@ -52,8 +52,6 @@ void controller::play() {
             key = "r";
         }
 
-        key = "d";
-
         while (window.pollEvent(event)) {
 
             if (event.type == sf::Event::Closed) {
@@ -93,20 +91,18 @@ void controller::play() {
 
             }
         }
-        if (view_num == 3){
+        if (view_num == 3) {
             int n = game->tic(key, control_data[0],
-                             (int) pixelPos.x, (int) pixelPos.y);
-            if (n != 0) {
-                //control_data[5] = n;
-                switch (view->paint(control_data)) {
-                    case 1:
-                        view = new start_menu(&window);
-                        view_num = 1;
-                        break;
-                    case -1:
-                        window.close();
-                        return;
-                }
+                              (int) pixelPos.x, (int) pixelPos.y);
+            control_data[5] = n;
+            switch (view->paint(control_data)) {
+                case 1:
+                    view = new start_menu(&window);
+                    view_num = 1;
+                    break;
+                case -1:
+                    window.close();
+                    return;
             }
         }
         window.display();
