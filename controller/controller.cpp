@@ -63,6 +63,7 @@ void controller::play() {
             switch (k) {
                 case 1: { // в старт-меню
                     if (view_num != 1) {
+                        delete view;
                         view = new start_menu(&window);
                         view_num = 1;
                     }
@@ -70,6 +71,7 @@ void controller::play() {
                 }
                 case 2: { // в главное меню
                     if (view_num != 2) {
+                        delete view;
                         view = new main_menu(&window);
                         view_num = 2;
                     }
@@ -77,7 +79,9 @@ void controller::play() {
                 }
                 case 3: { // новая игра
                     if (view_num != 3) {
+                        delete view;
                         view = new view_game(&window, game);
+                        delete game;
                         game = new class game(control_data[3], control_data[3], view);
                         view_num = 3;
                         control_data[5] = 0;

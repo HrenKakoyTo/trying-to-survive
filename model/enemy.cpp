@@ -29,14 +29,15 @@ void enemy:: move(hero* & hero){
     int h = get_height();
     int hero_w = hero->get_width();
     int hero_h = hero->get_height();
-    int hero_x = hero->get_x();
-    int hero_y = hero->get_y();
+    double hero_x = hero->get_x();
+    double hero_y = hero->get_y();
     double angle = direction_to_hero(hero);
     set_angle_of_rotation(angle);
-    int new_x = get_x() + get_speed() * cos(angle);
-    int new_y = get_y() + get_speed() * sin(angle);
+    double new_x = get_x() + get_speed() * cos(angle);
+    double new_y = get_y() + get_speed() * sin(angle);
     set_x(new_x);
     set_y(new_y);
-    if (abs(new_x-hero_x) < (w+hero_w)/2 && abs(new_y-hero_y) < (h+hero_h)/2)
+    if (!(new_x > hero_x + hero_w || new_x + w < hero_x || new_y > hero_y + hero_h || new_y + h < hero_y)){
         hero->hit(damage);
+    }
 }

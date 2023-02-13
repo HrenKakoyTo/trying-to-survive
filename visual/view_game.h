@@ -28,7 +28,7 @@ private: game* model;
 public:
     view_game(RenderWindow* window, game* model);
     view_game(RenderWindow* window): view(window){};
-    void draw_interface(int hp, int wp_now, int wp_total) override;
+    void draw_interface(int hp, int wp_now, int wp_total, int ep) override;
     int paint(vector <int> & ctrl_data)override;
 
 };

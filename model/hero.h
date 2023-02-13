@@ -18,9 +18,11 @@ private:
 public:
     void set_cooldown(int tics);
     void set_accuracy(float angle);
+    void set_time_to_shot(int tics){time_to_shot = tics;}
 
     int get_cooldown();
-    double fet_accuracy();
+    double set_accuracy();
+    int get_time_to_shot(){return time_to_shot;}
 
     double direction_to_mouse(int x, int y);
     virtual list<projectile*> shot() = 0;

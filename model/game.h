@@ -7,6 +7,7 @@
 #include "hero.h"
 #include "world_map.h"
 #include <vector>
+#include <algorithm>
 
 #ifndef UNTITLED_GAME_H
 #define UNTITLED_GAME_H
@@ -21,8 +22,12 @@ public:
     game(int hero_type, int map_type, class view* & view);
     world_map get_map(){return map;}
     hero* get_hero(){return player;}
-    list<projectile*> get_projectiles(){return projectile_list;}
-    list<enemy> get_enemies(){return enemy_list;}
+    auto get_projectile_begin(){return projectile_list.begin();}
+    auto get_projectile_end(){return projectile_list.end();}
+    auto get_projectile_size(){return projectile_list.size();}
+    auto get_enemies_begin(){return enemy_list.begin();}
+    auto get_enemies_end(){return enemy_list.end();}
+    auto get_enemies_size(){return enemy_list.size();}
     int tic(string direction, bool is_shooting, int mouse_x, int mouse_y);
     void start(int hero_type, int map_type);
 };

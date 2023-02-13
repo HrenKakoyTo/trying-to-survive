@@ -70,14 +70,13 @@ void world_map::set_enemy_list(vector<enemy> enemy_list){
 }
 vector<enemy> world_map::wave_spawn(int hero_x, int hero_y) {
     vector<enemy> new_enemies;
-    if (tic_to_wave > 1){
+    if (tic_to_wave > 1 || wave_number == wave_count){
         tic_to_wave -= 1;
         return new_enemies;
     }
     tic_to_wave = wave_cooldown;
     wave_number += 1;
     for (int i=0; i<complexity*(1+wave_number*0.2); i++){
-       // srand(clock());
         enemy new_enemy = enemy_list[rand()%enemy_list.size()];
         if (rand()%2){ // 1 left or right
             if (rand()%2){ // left side

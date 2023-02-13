@@ -22,7 +22,7 @@ public:
     void set_damage(int damage);
     void set_time_to_live(int tics);
 
-    virtual void move() = 0;
+    virtual bool move() = 0;
     virtual bool hit() = 0;
 };
 

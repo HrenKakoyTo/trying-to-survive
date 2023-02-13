@@ -25,10 +25,10 @@ double world_object::get_angle_of_rotation() const{
 void world_object::set_type(string type) {
     this->type = type;
 }
-void world_object::set_x(int x) {
+void world_object::set_x(double x) {
     this->x = x;
 }
-void world_object::set_y(int y) {
+void world_object::set_y(double y) {
     this->y = y;
 }
 void world_object::set_height(int h) {
@@ -37,6 +37,6 @@ void world_object::set_height(int h) {
 void world_object::set_width(int w) {
     this->width = w;
 }
-void world_object::set_angle_of_rotation(float angle) {
+void world_object::set_angle_of_rotation(double angle) {
     this->angle_of_rotation = angle;
 }

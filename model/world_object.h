@@ -18,15 +18,15 @@ public:
     string get_type() const;
     void set_type(string type);
     double get_x() const;
-    void set_x(int x);
+    void set_x(double x);
     double get_y() const;
-    void set_y(int y);
+    void set_y(double y);
     int get_width() const;
     void set_width(int w);
     int get_height() const;
     void set_height(int h);
     double get_angle_of_rotation() const;
-    void set_angle_of_rotation(float angle);
+    void set_angle_of_rotation(double angle);
     virtual bool hit(int damage) = 0;
 };
 

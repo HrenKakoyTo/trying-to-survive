@@ -18,7 +18,7 @@ View(FloatRect(0.f,0.f,800.f,600.f)){
     this->player.sprite.setTexture(this->player.t);
 }
 
-void view_game::draw_interface(int hp, int wp_now, int wp_total) {
+void view_game::draw_interface(int hp, int wp_now, int wp_total, int ep) {
     auto window = get_window();
 
     View.setCenter(sf::Vector2f(400, 300));
@@ -31,22 +31,35 @@ void view_game::draw_interface(int hp, int wp_now, int wp_total) {
     string str_heal_point;
     str_heal_point = to_string(hp);
 
-Text heal_point("", font, 20);
-    heal_point.setPosition(View.getCenter().x - 165, View.getCenter().y - 200);
-    heal_point.setString(L"Здоровье : "+str_heal_point);
-    heal_point.setColor(Color::White);
-    string str_wave_point_now;
-    str_wave_point_now = to_string(wp_now);
     string str_wave_point_total;
     str_wave_point_total = to_string(wp_total);
 
+    string str_wave_point_now;
+    str_wave_point_now = to_string(wp_now);
+
+    string str_enemy_point;
+    str_enemy_point = to_string(ep);
+
+
+Text heal_point("", font, 20);
+     heal_point.setPosition(View.getCenter().x - 370, View.getCenter().y - 270);
+     heal_point.setString(L"Здоровье : "+str_heal_point);
+
+
+
 Text wave_point("", font, 20);
-    wave_point.setColor(Color::White);
-    wave_point.setPosition(View.getCenter().x - 140, View.getCenter().y - 175);
-    wave_point.setString(L"Волна " + str_wave_point_now + L" из " + str_wave_point_total);
+     wave_point.setPosition(View.getCenter().x - 370, View.getCenter().y - 250);
+     wave_point.setString(L"Волна " + str_wave_point_now + L" из " + str_wave_point_total);
+
+Text enemy_point("", font, 20);
+     enemy_point.setPosition(View.getCenter().x - 370, View.getCenter().y - 230);
+     enemy_point.setString(L"Противники: " +str_enemy_point);
 
     window->draw(heal_point);
     window->draw(wave_point);
+    window->draw(enemy_point);
+
+
 }
 
 int view_game::paint(vector<int> &ctrl_data) {
@@ -64,6 +77,8 @@ int view_game::paint(vector<int> &ctrl_data) {
         check_enemy(); // достаём лиcт противников из модели и сверяем с нашим листом, если есть различия, то исправляем.
         check_projectile();
 
+        this->player.sprite.setRotation(player->get_angle_of_rotation()*180/3.14);
+
         window->draw(map.sprite);
         draw_enemy();
         window->draw(this->player.sprite);
@@ -71,8 +86,7 @@ int view_game::paint(vector<int> &ctrl_data) {
 
         world_map map1 = model->get_map();
 
-
-        draw_interface(player->get_hp(), map1.get_wave_number(), map1.get_wave_count());
+        draw_interface(player->get_hp(), map1.get_wave_number(), map1.get_wave_count(), model->get_enemies_size());
     }
 
 
@@ -95,14 +109,13 @@ int view_game::paint(vector<int> &ctrl_data) {
         s_start.setPosition(300,290);
         s_exit.setPosition(300, 380);
 
-        if(IntRect(300, 290, 150, 17).contains(ctrl_data[1], ctrl_data[2]) && ctrl_data[0]){
-            return_value = 1;
-        }
-        else if(IntRect(300, 380, 125, 17).contains(ctrl_data[1], ctrl_data[2]) && ctrl_data[0]){
+        //if(IntRect(300, 290, 150, 17).contains(ctrl_data[1], ctrl_data[2]) && ctrl_data[0]){
+        //    return_value = 1;}
+        if(IntRect(300, 380, 125, 17).contains(ctrl_data[1], ctrl_data[2]) && ctrl_data[0]){
             return_value = -1;}
 
         window->draw(s_win);
-        window->draw(s_start);
+        //window->draw(s_start);
         window->draw(s_exit);
     }
 
@@ -113,14 +126,14 @@ int view_game::paint(vector<int> &ctrl_data) {
         s_start.setPosition(300,290);
         s_exit.setPosition(300, 380);
 
-        if(IntRect(300, 290, 150, 17).contains(ctrl_data[1], ctrl_data[2]) && ctrl_data[0]){
-            return_value = 1;
-        }
-        else if(IntRect(300, 380, 125, 17).contains(ctrl_data[1], ctrl_data[2]) && ctrl_data[0]){
+        //if(IntRect(300, 290, 150, 17).contains(ctrl_data[1], ctrl_data[2]) && ctrl_data[0]){
+        //    return_value = 1;
+        //}
+        if(IntRect(300, 380, 125, 17).contains(ctrl_data[1], ctrl_data[2]) && ctrl_data[0]){
             return_value = -1;}
 
         window->draw(s_lose);
-        window->draw(s_start);
+        //window->draw(s_start);
         window->draw(s_exit);
     }
 
@@ -129,20 +142,19 @@ int view_game::paint(vector<int> &ctrl_data) {
 }
 
 void view_game::check_enemy() {
-    list<enemy> enemy_list = model->get_enemies();
 
-    while (enemy_list.size() > enemies.size()) {
+    while (model->get_enemies_size() > enemies.size()) {
         enemies.push_back(texture());
     }
-    while (enemy_list.size() < enemies.size()) {
+    while (model->get_enemies_size() < enemies.size()) {
         enemies.pop_back();
     }
 
     auto it2 = enemies.begin();
-    for (auto it1 = enemy_list.begin(); it1 != enemy_list.end(); it1++) {
+    for (auto it1 = model->get_enemies_begin(); it1 != model->get_enemies_end(); it1++) {
         int model_x = it1->get_x();
         int model_y = it1->get_y();
-        double model_angle = it1->get_angle_of_rotation() * (360 / 3.14);
+        double model_angle = it1->get_angle_of_rotation() * (180 / 3.14);
         string model_type = it1->get_type();
         int view_x = it2->sprite.getPosition().x;
         int view_y = it2->sprite.getPosition().y;
@@ -168,19 +180,18 @@ void view_game::check_enemy() {
 }
 
 void view_game::check_projectile() {
-    list<projectile *> projectile_list = model->get_projectiles();
-    while (projectile_list.size() > proj_tile.size()) {
+    while (model->get_projectile_size() > proj_tile.size()) {
         proj_tile.push_back(texture());
     }
-    while (projectile_list.size() < proj_tile.size()) {
+    while (model->get_projectile_size() < proj_tile.size()) {
         proj_tile.pop_back();
     }
 
     auto it2 = proj_tile.begin();
-    for (auto it1 = projectile_list.begin(); it1 != projectile_list.end(); it1++) {
+    for (auto it1 = model->get_projectile_begin(); it1 != model->get_projectile_end(); it1++) {
         int m_x = (*it1)->get_x();
         int m_y = (*it1)->get_y();
-        double m_angle = (*it1)->get_angle_of_rotation();
+        double m_angle = (*it1)->get_angle_of_rotation() * 180 / 3.14;
         string m_type = (*it1)->get_type();
         int v_x = it2->sprite.getPosition().x;
         int v_y = it2->sprite.getPosition().y;
@@ -194,7 +205,7 @@ void view_game::check_projectile() {
             it2->sprite.move(0, m_y - v_y);
         }
         if (m_angle != v_angle) {
-            it2->sprite.setRotation(m_angle - v_angle);
+            it2->sprite.setRotation(m_angle);
         }
         if (m_type != v_type) {
             it2->t.loadFromFile("../texture/" + m_type + ".png");

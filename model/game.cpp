@@ -57,8 +57,8 @@ void game::start(int hero_type, int map_type) {
     }
 }
 
-bool collision_check(bool x1, bool y1,int w1, int h1, bool x2, bool y2, int w2, int h2){
-    return (x1+w1 > x2 && x2+w2 > x1 && y1+h1 > y2 && y2+h2 > y1);
+bool collision_check(double x1, double y1,int w1, int h1, double x2, double y2, int w2, int h2){                                   //collision check
+    return !(x1 > x2 + w2 || x1 + w1 < x2 || y1 > y2 + h2 || y1 + h1 < y2);
 }
 
 game::game(int hero_type, int map_type, class view *&view):map() {
@@ -74,6 +74,7 @@ int game::tic(string dir, bool is_shooting, int mouse_x, int mouse_y) {
                      300, map.get_width() - 300);
         player->direction_to_mouse(mouse_x, mouse_y);
     // стрельба
+    player->set_time_to_shot(player->get_time_to_shot()-1);
     if (is_shooting) {
         list<projectile *> new_projectiles = player->shot();
         for (auto it = new_projectiles.begin(); it != new_projectiles.end(); it++) {
@@ -95,28 +96,41 @@ int game::tic(string dir, bool is_shooting, int mouse_x, int mouse_y) {
     // проверка на поподание
     for (auto it1 = projectile_list.begin(); it1!=projectile_list.end() && projectile_list.size()>1; it1++){
         bool fl = true;
-        for (auto it2 = enemy_list.begin(); (it2!= enemy_list.end() && enemy_list.size()>1 && projectile_list.size()>1); it2++){
-            if (collision_check((*it1)->get_x(), (*it1)->get_x(), (*it1)->get_width(), (*it1)->get_height(),
-                                (it2)->get_x(), (it2)->get_x(), (it2)->get_width(), (it2)->get_height())){
-                if(it2->hit((*it1)->get_damage()) && enemy_list.size()>1){
+        for (auto it2 = enemy_list.begin(); (it2!= enemy_list.end() && it1 != projectile_list.end() && projectile_list.size()>1); it2++){
+            if (collision_check((*it1)->get_x(), (*it1)->get_y(), (*it1)->get_width(), (*it1)->get_height(),
+                                (it2)->get_x(), (it2)->get_y(), (it2)->get_width(), (it2)->get_height())){
+                bool b = it2->hit((*it1)->get_damage());
+                if(b && enemy_list.size()>1){
                     auto buf = it2;
                     it2++;
                     enemy_list.erase(buf);
                 }
-                else if (it2->hit((*it1)->get_damage())) enemy_list.clear();
-                if((*it1)->hit() && projectile_list.size() > 1){
+                else if (b) enemy_list.clear();
+                b = (*it1)->hit();
+                if(b && projectile_list.size() > 1){
                     fl = false;
                     auto buf = it1;
                     it1++;
                     projectile_list.erase(buf);
                 }
-                else if ((*it1)->hit()) projectile_list.clear();
+                else if (b) projectile_list.clear();
             }
         }
     }
 
+    // двигаем пульки
+    for (auto it = projectile_list.begin(); it != projectile_list.end(); it++){
+        bool b = (*it)->move();
+        if(b && projectile_list.size() > 1){
+            auto buf = it;
+            it++;
+            projectile_list.erase(buf);
+        }
+        else if (b) projectile_list.clear();
+    }
+
     // проверка на победку
-    if (map.get_wave_number() >= map.get_wave_count() && enemy_list.size() == 0){
+    if (map.get_wave_number() >= map.get_wave_count() && enemy_list.empty()){
         exit_code = 1;
     }
     return exit_code;
